@@ -8,7 +8,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { getMejoras } from '../../helpers/mejoras';
+import { getVisitas } from '../../helpers/mejoras';
 
 export const TablaVisitas = () => {
   const [mejoras, setVisitas] = useState();
