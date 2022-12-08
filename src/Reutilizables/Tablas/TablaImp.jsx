@@ -36,7 +36,7 @@ export const TablaImp = () => {
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
-          <TableRow>
+          <TableRow className='primeraFila'>
             <TableCell><b>#</b></TableCell>
             <TableCell><b>Nombre</b></TableCell>
             <TableCell><b>Aprobado Por</b></TableCell>
