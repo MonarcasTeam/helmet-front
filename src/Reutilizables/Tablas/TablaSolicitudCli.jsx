@@ -36,7 +36,7 @@ export const TablaSolicitudCli = () => {
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
-          <TableRow>
+          <TableRow className='primeraFila'>
             <TableCell><b>#</b></TableCell>
             <TableCell><b>Tipo solicitud</b></TableCell>
             <TableCell><b>Fecha</b></TableCell>

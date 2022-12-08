@@ -2,9 +2,8 @@ import React from 'react'
 import 'antd/dist/antd.css'
 import "../estilos.css"
 import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli';
-import { DownloadButton } from '../Reutilizables/Botones/DownloadButton';
-import { BackButtonReport } from '../Reutilizables/Botones/BackButtonReport';
 import { MenuSolicitudes } from '../Reutilizables/Botones/MenuSolicitudes';
+import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin';
 
 export const SoliClienteS = () => {
     return (
@@ -43,7 +42,7 @@ export const SoliClienteS = () => {
                     <MenuSolicitudes />
                 </div>
                 <div className="homeB">
-                    <HomeButtonCli />
+                    <HomeButtonAdmin />
                 </div>
             </div>
         </div>

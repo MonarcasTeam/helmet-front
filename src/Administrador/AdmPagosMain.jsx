@@ -4,6 +4,7 @@ import "../estilos.css"
 import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin.jsx'
 import { TablaPagoClientes } from '../Reutilizables/Tablas/TablaPagoClientes'
 import { BarraBuscarCli } from '../Reutilizables/BarraBuscarCli'
+import { BackButtonClient } from '../Reutilizables/Botones/BackButtonClient'
 
 export const AdmPagosMain = () => {
     return (
@@ -16,8 +17,13 @@ export const AdmPagosMain = () => {
                     <BarraBuscarCli />
                 </div>
                 <TablaPagoClientes />
-                <div className="buttonHome">
-                    <HomeButtonAdmin />
+                <div className="SetButtonsPago">
+                    <div className="buttonsPago">
+                        <BackButtonClient />
+                    </div>
+                    <div className="homePago">
+                        <HomeButtonAdmin />
+                    </div>
                 </div>
             </div>
         </div>

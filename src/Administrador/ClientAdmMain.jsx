@@ -5,6 +5,7 @@ import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin.jsx'
 import { BarraBuscarCli } from '../Reutilizables/BarraBuscarCli'
 import { NewClientButton } from '../Reutilizables/Botones/NewClientButton'
 import { TablaClientes } from '../Reutilizables/Tablas/TablaClientes'
+import { BackButtonClient } from '../Reutilizables/Botones/BackButtonClient'
 
 export const ClientAdmMain = () => {
     return (
@@ -20,8 +21,13 @@ export const ClientAdmMain = () => {
                     <BarraBuscarCli />
                 </div>
                 <TablaClientes />
-                <div className="buttonHome">
-                    <HomeButtonAdmin />
+                <div className="SetButtonsPago">
+                    <div className="buttonsPago">
+                        <BackButtonClient />
+                    </div>
+                    <div className="homePago">
+                        <HomeButtonAdmin />
+                    </div>
                 </div>
             </div>
         </div>

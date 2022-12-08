@@ -2,9 +2,9 @@ import React from 'react'
 import 'antd/dist/antd.css'
 import "../estilos.css"
 import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin.jsx'
-import { TablaPagoClientes } from '../Reutilizables/Tablas/TablaPagoClientes'
 import { BarraBuscarCli } from '../Reutilizables/BarraBuscarCli'
 import { TablaSolicitudCli } from '../Reutilizables/Tablas/TablaSolicitudCli'
+import { BackButtonClient } from '../Reutilizables/Botones/BackButtonClient'
 
 export const SoliClientesF = () => {
     return (
@@ -17,8 +17,13 @@ export const SoliClientesF = () => {
                     <BarraBuscarCli />
                 </div>
                 <TablaSolicitudCli />
-                <div className="buttonHomeTab">
-                    <HomeButtonAdmin />
+                <div className="SetButtonsPago">
+                    <div className="buttonsPago">
+                        <BackButtonClient />
+                    </div>
+                    <div className="homePago">
+                        <HomeButtonAdmin />
+                    </div>
                 </div>
             </div>
         </div>

@@ -482,6 +482,7 @@
 }
 
 .listCliAcc {
+    width: 20%;
     float: left;
     margin-bottom: 20px;
 }
