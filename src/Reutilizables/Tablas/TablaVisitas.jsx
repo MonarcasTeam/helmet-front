@@ -14,7 +14,7 @@ export const TablaVisitas = () => {
   const [mejoras, setVisitas] = useState();
 
   useEffect(() => {
-    getMejoras().then((m) => {
+    getVisitas().then((m) => {
       setVisitas(m);
     });
   },[]);
