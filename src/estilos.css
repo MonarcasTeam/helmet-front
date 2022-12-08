@@ -1,0 +1,532 @@
+.cuerpo {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    width: auto;
+    max-width: 1000px;
+    height: auto;
+    max-height: 530px;
+    margin-top: 25px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    border-style: dotted;
+    background-color: white;
+    border-color: rgb(7, 153, 2);
+}
+
+.boxOne {
+    width: 442px;
+    height: auto;
+    float: left;
+    padding: 10px 14px;
+    margin-top: 20px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.boxTwo {
+    width: 442px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    padding: 10px 14px;
+    align-items: center;
+}
+
+.boxThree {
+    width: 442px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 10px 14px;
+    align-items: center;
+}
+
+.boxThreeCli {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 10px 14px;
+    align-items: center;
+}
+
+.boxFour {
+    width: 442px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    padding: 10px 14px;
+    align-items: center;
+}
+
+.contOne {
+    width: 330px;
+    height: auto;
+    margin: auto;
+}
+
+.contTwo {
+    width: 330px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contThree {
+    width: 330px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contFour {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.oneTitle {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+.twoTitle {
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.threeTitle {
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.threeTitleCli {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.fourTitle {
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.repTitle {
+    margin-bottom: 22px;
+}
+
+.primeraFila {
+    background-color: rgb(252, 215, 9);
+}
+
+.masterTabCli {
+    margin-top: 20px;
+}
+
+.masterTab {
+    margin-bottom: 30px;
+}
+
+.masterTab th {
+    text-align: center;
+}
+
+.tabAccidentes td {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.tabReportes{
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.estadoButton {
+    display: flex;
+}
+
+.verEstado {
+    width: auto;
+    height: auto;
+}
+
+.repContenedor {
+    width: 950px;
+    height: 100%;
+    margin-top: 25px;
+    margin: auto;
+    padding: 20px;
+    float: left;
+    background-color: white;
+    border-style: dotted;
+    border-color: rgb(7, 153, 2);
+}
+
+.TittleAcc {
+    text-align: center;
+    width: 100%;
+    margin-top: -0px;
+}
+
+.TittleAccP {
+    width: auto;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.guardar {
+    float: right;
+}
+
+.nuevoAcc {
+    width: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 15px;
+    float: left;
+}
+
+.nuevaSoli {
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+    float: left;
+}
+
+
+.observ {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    bottom: 0;
+    z-index: 999999;
+}
+
+.observSoli {
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+    bottom: 0;
+    z-index: 999999;
+}
+
+.observ2 {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.SoliDetail {
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nuevoAcc2 {
+    width: 100%;
+    margin-top: -30px;
+    font-size: 15px;
+}
+
+.nuevoAcc td {
+    width: 100%;
+    height: auto;
+}
+
+.nuevoAcc input {
+    width: 350px;
+    margin: 0 20px;
+}
+
+.fecha {
+    width: 200px;
+    height: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+
+.buttons {
+    width: auto;
+    margin-top: 10px;
+    bottom: 100px;
+    display: flex;
+    float: left;
+}
+
+.buttonHome {
+    float: right;
+    margin-top: auto;
+}
+
+.homeB {
+    margin-top: 10px;
+    float: right;
+}
+
+.TittleNewUser {
+    text-align: center;
+    width: 100%;
+    margin-top: -0px;
+}
+
+.nuevoUser {
+    width: auto;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    float: left;
+}
+
+.nuevoUser td {
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.inputDefecto {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.inputDefectoA {
+    width: 350px;
+    margin: 0 20px;
+}
+
+.nivel {
+    margin: 0 20px;
+}
+
+.buttonsA {
+    width: auto;
+    margin-top: 50px;
+    bottom: 100px;
+    display: flex;
+    float: left;
+}
+
+.homeA {
+    margin-top: 50px;
+    float: right;
+}
+
+.buscar {
+    float: right;
+}
+
+.usersTitle {
+    margin-bottom: 22px;
+    text-align: center;
+    float: left;
+}
+
+.AccTitle {
+    margin-bottom: 22px;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+.reportTitle {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+.MenuAcc {
+    float: left;
+}
+
+.botonNuevoUsuario {
+    margin-right: 20px;
+    float: left;
+}
+
+.pagoDetail {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.buttonsPago {
+    width: auto;
+    bottom: 100px;
+    display: flex;
+    float: left;
+}
+
+.homePago {
+    float: right;
+}
+
+.SetButtonsPago {
+    margin-top: 30px;
+}
+
+.codEmpresa {
+    float: left;
+}
+
+.estServicio {
+    float: right;
+    margin-right: 50px;
+}
+
+.CheckImg {
+    max-width: 25px;
+    max-height: 25px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.buttonsAct {
+    width: 190px;
+}
+
+.Fpago {
+    margin: 0 20px;
+}
+
+.cargarM {
+    margin: 0 20px;
+}
+
+.nuevoClient {
+    width: auto;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.TittleNewClient {
+    text-align: center;
+    width: 100%;
+}
+
+.buttonsCli {
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    float: left;
+}
+
+.homeCli {
+    margin-top: 20px;
+    float: right;
+}
+
+.titContenedor {
+    padding: 10px;
+}
+
+.titEmpresa {
+    padding: 10px;
+}
+
+.accContent {
+    width: 75%;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.listCliAcc {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.homeRend {
+    margin-right: 20px;
+    float: right;
+}
+
+.backRend {
+    float: left;
+}
+
+.rendEmpresa {
+    height: auto;
+}
+
+.SetButtonsRend {
+    width: 100%;
+    margin: 10px;
+    float: left;
+}
+
+.masterTabPa th {
+    text-align: left;
+}
+
+.tabPagos td {
+    font-size: 15px;
+    text-align: left;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.nuevoRep td {
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.TittleRep {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.repDetail {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.repDetailText {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 20px;
+    text-align: justify;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: white;
+    text-decoration: none;
+}
