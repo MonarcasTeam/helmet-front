@@ -286,6 +286,11 @@
     margin-top: auto;
 }
 
+.buttonHomeTab {
+    float: right;
+    margin-top: 20px;
+}
+
 .homeB {
     margin-top: 10px;
     float: right;

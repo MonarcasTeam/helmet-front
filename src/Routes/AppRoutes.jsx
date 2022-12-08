@@ -48,6 +48,7 @@ import { SolicitudClienteF } from '../Cliente/SolicitudClienteF'
 import { SolicitudClienteS } from '../Cliente/SolicitudClienteS'
 import { SolicitudClienteT } from '../Cliente/SolicitudClienteT'
 import { SubCliente } from '../Administrador/SubCliente'
+import { SoliClientesF } from '../Administrador/SoliClientesF'
 
 export const AppRoutes = () => {
 
@@ -198,6 +199,12 @@ export const AppRoutes = () => {
         <Route path="/admin/BackAct" element={
           <ProtectedRoute user={user}>
             <ActClientes />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/SoliClienteF" element={
+          <ProtectedRoute user={user}>
+            <SoliClientesF />
           </ProtectedRoute>
         } />
 

@@ -3,7 +3,6 @@ import 'antd/dist/antd.css'
 import "../estilos.css"
 import Button from 'react-bootstrap/Button';
 import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin';
-import { BackButtonAct } from '../Reutilizables/Botones/BackButtonAct';
 import { Link } from "react-router-dom";
 
 export const SubCliente = () => {
@@ -25,7 +24,7 @@ export const SubCliente = () => {
                     </tr>
                 </table>
                 <div className="SoliClientes">
-                    <Button className="SubCliButtons" variant="success"><Link to="#">Solicitudes</Link></Button>
+                    <Button className="SubCliButtons" variant="success"><Link to="/admin/SoliClienteF">Solicitudes</Link></Button>
                 </div>
                 <div className="SetButtonsPago">
                     {/* <div className="buttonsPago">

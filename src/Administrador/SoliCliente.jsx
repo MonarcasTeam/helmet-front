@@ -3,7 +3,6 @@ import 'antd/dist/antd.css'
 import "../estilos.css"
 import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli';
 import { DownloadButton } from '../Reutilizables/Botones/DownloadButton';
-import { BackButtonRep } from '../Reutilizables/Botones/BackButtonRep';
 import { BackButtonReport } from '../Reutilizables/Botones/BackButtonReport';
 
 export const ReporteClientesS = () => {
