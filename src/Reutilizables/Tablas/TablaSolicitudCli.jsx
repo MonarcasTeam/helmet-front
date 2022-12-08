@@ -20,7 +20,7 @@ export const TablaSolicitudCli = () => {
     getMejoras().then((m) => {
       setMejoras(m);
     });
-  },[]);
+  }, []);
 
   function createData(nombre, aprobadoPor, fecha) {
     return { nombre, aprobadoPor, fecha };
@@ -62,6 +62,11 @@ export const TablaSolicitudCli = () => {
               <TableCell component="th" scope="row">
                 ${row.fecha}
               </TableCell>
+              <TableCell component="th" scope="row">
+                <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/SoliClienteS">Ver detalle</Link></Button></td>
+              </TableCell>
+
+
 
             </TableRow>
           ))}

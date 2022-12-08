@@ -49,6 +49,7 @@ import { SolicitudClienteS } from '../Cliente/SolicitudClienteS'
 import { SolicitudClienteT } from '../Cliente/SolicitudClienteT'
 import { SubCliente } from '../Administrador/SubCliente'
 import { SoliClientesF } from '../Administrador/SoliClientesF'
+import { SoliClienteS } from '../Administrador/SoliClienteS'
 
 export const AppRoutes = () => {
 
@@ -205,6 +206,12 @@ export const AppRoutes = () => {
         <Route path="/admin/SoliClienteF" element={
           <ProtectedRoute user={user}>
             <SoliClientesF />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/SoliClienteS" element={
+          <ProtectedRoute user={user}>
+            <SoliClienteS />
           </ProtectedRoute>
         } />
 

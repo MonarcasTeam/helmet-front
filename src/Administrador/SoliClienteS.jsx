@@ -4,20 +4,27 @@ import "../estilos.css"
 import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli';
 import { DownloadButton } from '../Reutilizables/Botones/DownloadButton';
 import { BackButtonReport } from '../Reutilizables/Botones/BackButtonReport';
+import { MenuSolicitudes } from '../Reutilizables/Botones/MenuSolicitudes';
 
-export const ReporteClientesS = () => {
+export const SoliClienteS = () => {
     return (
         <div className="cuerpo">
             <div className="repContenedor">
                 <div className="TittleRep">
-                    <h1>Reporte Nº 100001</h1>
+                    <h1>Solicitud # 00001</h1>
                 </div>
                 <table className="repDetail">
                     <tr>
-                        <td><b>Emitido por :</b></td>
-                        <td>Guillermo Carrasco</td>
-                        <td><b>Fecha y hora :</b></td>
-                        <td>28/08/2022 16:00 hrs.</td>
+                        <td><b>Tipo de solicitud :</b></td>
+                        <td>Asesoría especial</td>
+                        <td><b>Cliente :</b></td>
+                        <td>Duoc UC</td>
+                    </tr>
+                    <tr>
+                        <td><b>Estado :</b></td>
+                        <td>Completa</td>
+                        <td><b>Fecha :</b></td>
+                        <td>28/08/2022</td>
                     </tr>
                 </table>
                 <div className="repDetailText">
@@ -33,8 +40,7 @@ export const ReporteClientesS = () => {
                     </p>
                 </div>
                 <div className="buttons">
-                    <BackButtonReport />
-                    <DownloadButton />
+                    <MenuSolicitudes />
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />
