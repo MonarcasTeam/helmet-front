@@ -4,8 +4,7 @@ import { Select } from 'antd';
 import 'antd/dist/antd.css'
 import "../estilos.css"
 import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli.jsx';
-import { SaveReport } from '../Reutilizables/Botones/SaveReport.jsx';
-import { CancelButtonRep } from '../Reutilizables/Botones/CancelButtonRep.jsx';
+import { MenuReport } from '../Reutilizables/Botones/MenuReport';
 
 const { TextArea } = Input;
 
@@ -63,8 +62,7 @@ export const ReporteNew = () => {
                 </div>
 
                 <div className="buttons">
-                    <SaveReport />
-                    <CancelButtonRep />
+                    <MenuReport />
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />

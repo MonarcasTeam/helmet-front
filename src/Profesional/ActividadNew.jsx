@@ -4,8 +4,7 @@ import { Select } from 'antd';
 import 'antd/dist/antd.css'
 import "../estilos.css"
 import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli.jsx';
-import { SaveReport } from '../Reutilizables/Botones/SaveReport.jsx';
-import { CancelButtonRep } from '../Reutilizables/Botones/CancelButtonRep.jsx';
+import { MenuActividad } from '../Reutilizables/Botones/MenuActividad';
 
 const { TextArea } = Input;
 
@@ -31,18 +30,21 @@ export const ActividadNew = () => {
                 </div>
                 <table className="nuevoRep">
                     <tr>
-                        <td><b>Cliente :</b></td>
+                        <td><b>Tipo de actividad :</b></td>
                         <td>
                             <Select
                                 defaultValue="Seleccionar"
                                 style={{
-                                    width: 120,
+                                    width: 150,
                                     marginRight: 20,
                                 }}
                                 onChange={handleChange}
                             >
-                                <Option value="Cliente1">Cliente1</Option>
-                                <Option value="Cliente2">Cliente2</Option>
+                                <Option value="Visita">Visita</Option>
+                                <Option value="Capacitación">Capacitación</Option>
+                                <Option value="Asesoría">Asesoría</Option>
+                                <Option value="Implementación">Implementación</Option>
+                                <Option value="Multa">Multa</Option>
                             </Select>
                         </td>
                         <td><b>Fecha y hora :</b></td>
@@ -52,17 +54,15 @@ export const ActividadNew = () => {
                         </td>
                     </tr>
                     <br />
+                    {/* formulario según selección */}
                     <tr>
-                        <td>Observación:</td>
+                        <td>asdasd</td>
                     </tr>
                 </table>
-                <div className="observ">
-                    <TextArea rows={6} />
-                </div>
+            
 
                 <div className="buttons">
-                    <SaveReport />
-                    <CancelButtonRep />
+                    <MenuActividad />
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />

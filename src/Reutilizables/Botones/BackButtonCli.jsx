@@ -17,7 +17,6 @@ export const BackButtonCli = () => {
           Nueva actividad
         </Link>
         </ToggleButton>
-
       </ToggleButtonGroup>
     </div>
   )
