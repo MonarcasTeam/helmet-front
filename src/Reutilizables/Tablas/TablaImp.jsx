@@ -1,47 +1,72 @@
-import Table from 'react-bootstrap/Table';
+import { useEffect, useState } from 'react';
+
+//importaciones
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import { getMejoras } from '../../helpers/mejoras';
+
+
 
 export const TablaImp = () => {
+
+  const [mejoras, setMejoras] = useState();
+
+  useEffect(() => {
+    getMejoras().then((m) => {
+      setMejoras(m);
+    });
+  });
+
+  function createData(nombre, aprobadoPor, fecha) {
+    return { nombre, aprobadoPor, fecha };
+  }
+
+  let rows = [];
+
+  mejoras?.map((m) => {
+    rows.push(createData(m.nombre, m.aprobadoPor, m.fecha))
+  });
+
   return (
-    <Table striped bordered hover size="md" className="masterTabPa">
-      <thead>
-        <tr className="primeraFila">
-          <th>Nombre</th>
-          <th>Fecha</th>
-          <th>Aprovado por</th>
-        </tr>
-      </thead>
-      <tbody className="tabPagos">
-        <tr>
-          <td>Señalización salidas de emergencias</td>
-          <td>05/08/2022</td>
-          <td>Carlos Diaz</td>
-        </tr>
-        <tr>
-          <td>Señalización zona segura</td>
-          <td>05/08/2022</td>
-          <td>Carlos Diaz</td>
-        </tr>
-        <tr>
-          <td>Renovación extintores</td>
-          <td>05/08/2022</td>
-          <td>Carlos Diaz</td>
-        </tr>
-        <tr>
-          <td>Señalización extintores</td>
-          <td>05/08/2022</td>
-          <td>Carlos Diaz</td>
-        </tr>
-        <tr>
-          <td>Instalación equipo desfibrilador</td>
-          <td>05/08/2022</td>
-          <td>Carlos Diaz</td>
-        </tr>
-        <tr>
-          <td>Simulacro de emergencia</td>
-          <td>05/08/2022</td>
-          <td>Carlos Diaz</td>
-        </tr>
-      </tbody>
-    </Table>
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell><b>#</b></TableCell>
+            <TableCell><b>Nombre</b></TableCell>
+            <TableCell><b>Aprobado Por</b></TableCell>
+            <TableCell><b>Fecha</b></TableCell>
+
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row, index) => (
+            <TableRow
+              key={row.nombre}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                <b>{index + 1}</b>
+              </TableCell>
+              <TableCell component="th" scope="row">
+                {row.nombre}
+              </TableCell>
+              <TableCell component="th" scope="row">
+                {row.aprobadoPor}
+              </TableCell>
+              <TableCell component="th" scope="row">
+                ${row.fecha}
+              </TableCell>
+
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
   )
 }
