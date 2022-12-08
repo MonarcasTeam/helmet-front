@@ -15,7 +15,7 @@ export const ModalVisitas = ({ setStateVisitas }) => {
                 <div className="tablaModal">
                     <TablaVisitas />
                 </div>
-                <Button className="animate__animated" onClick={closeVisitas} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeVisitas} variant="success">Cerrar</Button>
             </div>
         </div>
     )

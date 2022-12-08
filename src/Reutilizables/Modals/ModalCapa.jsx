@@ -15,7 +15,7 @@ export const ModalCapa = ({ setStateCapa }) => {
                 <div className="tablaModal">
                     <TablaCapa />
                 </div>
-                <Button className="animate__animated" onClick={closeCapa} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeCapa} variant="success">Cerrar</Button>
             </div>
         </div>
     )

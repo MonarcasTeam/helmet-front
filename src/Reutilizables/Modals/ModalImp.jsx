@@ -15,7 +15,7 @@ export const ModalImp = ({ setStateImp }) => {
                 <div className="tablaModal">
                     <TablaImp />
                 </div>
-                <Button className="animate__animated" onClick={closeImp} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeImp} variant="success">Cerrar</Button>
             </div>
         </div>
     )

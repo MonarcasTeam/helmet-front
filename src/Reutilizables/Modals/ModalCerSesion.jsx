@@ -36,7 +36,7 @@ export const ModalCerSesion = ({ setStateCerSesion }) => {
             <div className="contModalS">
                 <h2 className="titModalS">¿Desea cerrar sesión?</h2>
                 <Button onClick={onClickLogoutSession} className="animate__animated" variant="danger">Cerrar sesión</Button>
-                <Button onClick={closeCerSesion} className="animate__animated" variant="outline-success">Cancelar</Button>
+                <Button onClick={closeCerSesion} className="animate__animated" variant="success">Cancelar</Button>
             </div>
         </div>
     )

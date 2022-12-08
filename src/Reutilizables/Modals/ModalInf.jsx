@@ -15,7 +15,7 @@ export const ModalInf = ({ setStateInf }) => {
                 <div className="tablaModal">
                     <TablaInf />
                 </div>
-                <Button className="animate__animated" onClick={closeInf} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeInf} variant="success">Cerrar</Button>
             </div>
         </div>
     )

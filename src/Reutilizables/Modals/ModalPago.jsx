@@ -15,7 +15,7 @@ export const ModalPago = ({ setStateModal }) => {
                 <div className="tablaModal">
                     <TablaDetPagos />
                 </div>
-                <Button className="animate__animated" onClick={closeModal} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeModal} variant="success">Cerrar</Button>
             </div>
         </div>
     )

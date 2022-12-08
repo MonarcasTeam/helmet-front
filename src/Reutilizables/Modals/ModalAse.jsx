@@ -15,7 +15,7 @@ export const ModalAse = ({ setStateAse }) => {
                 <div className="tablaModal">
                     <TablaAse />
                 </div>
-                <Button className="animate__animated" onClick={closeAse} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeAse} variant="success">Cerrar</Button>
             </div>
         </div>
     )

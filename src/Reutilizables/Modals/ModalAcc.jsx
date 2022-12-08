@@ -15,7 +15,7 @@ export const ModalAcc = ({ setStateAcc }) => {
                 <div className="tablaModal">
                     <TablaMulta />
                 </div>
-                <Button className="animate__animated" onClick={closeAcc} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeAcc} variant="success">Cerrar</Button>
             </div>
         </div>
     )

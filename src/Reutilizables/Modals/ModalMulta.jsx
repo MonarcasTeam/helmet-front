@@ -15,7 +15,7 @@ export const ModalMulta = ({ setStateMulta }) => {
                 <div className="tablaModal">
                     <TablaMulta />
                 </div>
-                <Button className="animate__animated" onClick={closeMulta} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeMulta} variant="uccess">Cerrar</Button>
             </div>
         </div>
     )

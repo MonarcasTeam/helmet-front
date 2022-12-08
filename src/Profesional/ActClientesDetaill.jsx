@@ -99,19 +99,19 @@ export const ActClientesDetaill = () => {
 
                     <tr className="buttonsAct">
                         {/* sólo botones popup modal */}
-                        <td><Button onClick={showVisitas} className="buttonsAct" variant="outline-success">Visitas</Button></td>
-                        <td><Button onClick={showCapa} className="buttonsAct" variant="outline-success">Capacitaciones</Button></td>
-                        <td><Button onClick={showAse} className="buttonsAct" variant="outline-success">Asesorías</Button></td>
-                        <td><Button onClick={showLlama} className="buttonsAct" variant="outline-success">Llamados</Button></td>
+                        <td><Button onClick={showVisitas} className="buttonsAct" variant="success">Visitas</Button></td>
+                        <td><Button onClick={showCapa} className="buttonsAct" variant="success">Capacitaciones</Button></td>
+                        <td><Button onClick={showAse} className="buttonsAct" variant="success">Asesorías</Button></td>
+                        <td><Button onClick={showLlama} className="buttonsAct" variant="success">Llamados</Button></td>
 
 
                     </tr>
                     <br />
                     <tr className="buttonsAct">
-                        <td><Button onClick={showImp} className="buttonsAct" variant="outline-success">Implementaciones</Button></td>
-                        <td><Button onClick={showAcc} className="buttonsAct" variant="outline-success">Accidentes</Button></td>
-                        <td><Button onClick={showMulta} className="buttonsAct" variant="outline-secondary" disabled>Multas</Button></td>
-                        <td><Button onClick={showInf} className="buttonsAct" variant="outline-success">Informes</Button></td>
+                        <td><Button onClick={showImp} className="buttonsAct" variant="success">Implementaciones</Button></td>
+                        <td><Button onClick={showAcc} className="buttonsAct" variant="success">Accidentes</Button></td>
+                        <td><Button onClick={showMulta} className="buttonsAct" variant="outline-success" disabled>Multas</Button></td>
+                        <td><Button onClick={showInf} className="buttonsAct" variant="success">Informes</Button></td>
                     </tr>
 
 

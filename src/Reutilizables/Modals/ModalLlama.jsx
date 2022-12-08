@@ -15,7 +15,7 @@ export const ModalLlama = ({ setStateLlama }) => {
                 <div className="tablaModal">
                     <TablaLlama />
                 </div>
-                <Button className="animate__animated" onClick={closeLlama} variant="outline-success">Cerrar</Button>
+                <Button className="animate__animated" onClick={closeLlama} variant="success">Cerrar</Button>
             </div>
         </div>
     )
