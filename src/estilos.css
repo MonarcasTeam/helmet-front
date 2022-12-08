@@ -413,6 +413,22 @@
     width: 190px;
 }
 
+.SubClieButtons {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.SubCliButtons {
+    width: 190px;
+}
+
+.SoliClientes{
+    margin-top: 20px;
+    text-align: center;
+}
+
 .Fpago {
     margin: 0 20px;
 }

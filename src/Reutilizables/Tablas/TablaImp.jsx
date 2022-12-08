@@ -20,7 +20,7 @@ export const TablaImp = () => {
     getMejoras().then((m) => {
       setMejoras(m);
     });
-  });
+  },[]);
 
   function createData(nombre, aprobadoPor, fecha) {
     return { nombre, aprobadoPor, fecha };

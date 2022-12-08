@@ -47,6 +47,7 @@ import { ReporteClientesS } from '../Cliente/ReporteClientesS'
 import { SolicitudClienteF } from '../Cliente/SolicitudClienteF'
 import { SolicitudClienteS } from '../Cliente/SolicitudClienteS'
 import { SolicitudClienteT } from '../Cliente/SolicitudClienteT'
+import { SubCliente } from '../Administrador/SubCliente'
 
 export const AppRoutes = () => {
 
@@ -143,6 +144,12 @@ export const AppRoutes = () => {
         <Route path="/admin/listClient" element={
           <ProtectedRoute user={user}>
             <ClientAdmMain />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/SubCliente" element={
+          <ProtectedRoute user={user}>
+            <SubCliente />
           </ProtectedRoute>
         } />
 
