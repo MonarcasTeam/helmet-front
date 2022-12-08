@@ -8,10 +8,10 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { getVisitas } from '../../helpers/mejoras';
+import { getVisitas } from '../../helpers/visitas';
 
 export const TablaVisitas = () => {
-  const [mejoras, setVisitas] = useState();
+  const [visitas, setVisitas] = useState();
 
   useEffect(() => {
     getVisitas().then((m) => {
@@ -25,7 +25,7 @@ export const TablaVisitas = () => {
 
   let rows = [];
 
-  mejoras?.map((m) => {
+  visitas?.map((m) => {
     rows.push(createData(m.idCliente, m.fechaVisita, m.fechaSolicitud,m.idEstVis))
   });
 
