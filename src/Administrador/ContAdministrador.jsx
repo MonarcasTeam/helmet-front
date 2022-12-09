@@ -48,7 +48,7 @@ export const ContAdministrador = () => {
               type="dashboard"
             />
           </Tooltip>
-          <table>
+          <table className='infoGrafico'>
             <tr>
               <td><h7>Capacitaciones</h7></td>
               <td><Progress percent={50} steps={5} strokeColor={green[6]} /></td>
@@ -75,7 +75,7 @@ export const ContAdministrador = () => {
               type="dashboard"
             />
           </Tooltip>
-          <table>
+          <table className='infoGrafico'>
             <tr>
               <td><h7>Al día</h7></td>
               <td><Progress percent={70} steps={5} strokeColor={green[6]} /></td>

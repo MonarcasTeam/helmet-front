@@ -5,7 +5,7 @@ import { Input } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import 'antd/dist/antd.css'
 import "../estilos.css"
-import { MenuAccB } from '../Reutilizables/Menus/MenuUserB.jsx';
+import { MenuUserB } from '../Reutilizables/Botones/MenuUserB.jsx';
 
 const { Option } = Select;
 
@@ -70,7 +70,7 @@ export const UsersDetailAdm = () => {
                 </table>
 
                 <div className="buttonsA">
-                    <MenuAccB />
+                    <MenuUserB/>
                 </div>
                 <div className="homeA">
                     <HomeButtonAdmin />
