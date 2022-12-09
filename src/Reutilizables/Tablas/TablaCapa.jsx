@@ -26,7 +26,7 @@ export const TablaCapa = () => {
   let rows = [];
 
   capacitaciones?.map((c) => {
-    rows.push(createData(c.idUsuario, fecha, c.nAsistentes, c.titulo, lugares, c.materialAdd))
+    rows.push(createData(c.idUsuario, c.capacitacionesfecha, c.nAsistentes, c.titulo, c.lugares, c.materialAdd))
   });
 
   return (
