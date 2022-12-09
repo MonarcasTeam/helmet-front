@@ -17,7 +17,7 @@ export const TablaClientes = () => {
           <td>100001</td>
           <td>Mercadolibre CL</td>
           <td>11.111.111-1</td>
-          <td className="detalleButton"><Button className="verDetalle" variant="success">Editar cliente</Button></td>
+          <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/clientDetail">Editar cliente</Link></Button></td>
         </tr>
         <tr>
           <td>100002</td>

@@ -101,7 +101,6 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
-
         <Route path="/admin/NewUser" element={
           <ProtectedRoute user={user}>
             <UsersAdmS />
