@@ -1,16 +1,16 @@
 import { axiosApi } from "./api";
 
-export const getAsesorias = async() => {
+export const getAsesoria = async() => {
 
     const token = localStorage.getItem('token');
 
-    const asesoriasResp = axiosApi.get('/asesorias', {
+    const asesoriaResp = axiosApi.get('/asesoria', {
         headers: {
             'Authorization': 'Bearer ' + token
         }
     })
 
-    const { data } = asesoriasResp;
+    const { data } = asesoriaResp;
 
     return data;   
 }
