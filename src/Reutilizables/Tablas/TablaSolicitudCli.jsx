@@ -9,6 +9,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 import { getMejoras } from '../../helpers/mejoras';
 
 
@@ -43,6 +45,7 @@ export const TablaSolicitudCli = () => {
             <TableCell><b>Tipo solicitud</b></TableCell>
             <TableCell><b>Fecha</b></TableCell>
             <TableCell><b>Estado</b></TableCell>
+            <TableCell><b>Detalle</b></TableCell>
 
           </TableRow>
         </TableHead>
