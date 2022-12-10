@@ -4,7 +4,7 @@ export const getPagoCliente = async() => {
 
     const token = localStorage.getItem('token');
 
-    const pagoClienteResp = axiosApi.get('/clientes', {
+    const pagoClienteResp = await axiosApi.get('/clientes', {
         headers: {
             'Authorization': 'Bearer ' + token
         }

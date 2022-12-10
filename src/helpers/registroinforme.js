@@ -4,7 +4,7 @@ export const getRegistroinforme = async() => {
 
     const token = localStorage.getItem('token');
 
-    const registroinformeResp = axiosApi.get('/registroinforme', {
+    const registroinformeResp = await  axiosApi.get('/registroinforme', {
         headers: {
             'Authorization': 'Bearer ' + token
         }

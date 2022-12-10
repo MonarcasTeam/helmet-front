@@ -23,7 +23,7 @@ export const TablaAccidentes = () => {
       setAccidente(a);
     });
   },[]);
-
+  console.log(accidente)
   function createData(idCliente, fecha, idGravedad,idEstadoA) {
     return { idCliente, fecha, idGravedad,idEstadoA };
   }
@@ -65,10 +65,10 @@ export const TablaAccidentes = () => {
                 {row.fecha}
               </TableCell>
               <TableCell component="th" scope="row">
-                ${row.idGravedad}
+               {row.idGravedad}
               </TableCell>
               <TableCell component="th" scope="row">
-                ${row.idEstadoA}
+                {row.idEstadoA}
               </TableCell>
 
             </TableRow>

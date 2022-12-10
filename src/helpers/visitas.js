@@ -4,7 +4,7 @@ export const getVisitas = async() => {
 
     const token = localStorage.getItem('token');
 
-    const visitasResp = axiosApi.get('/visitas', {
+    const visitasResp = await axiosApi.get('/visitas', {
         headers: {
             'Authorization': 'Bearer ' + token
         }
