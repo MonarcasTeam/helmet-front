@@ -61,10 +61,10 @@ export const TablaMulta = () => {
             ${row.valor}
           </TableCell>
           <TableCell component="th" scope="row">
-            ${row.fechaPago}
+            {row.fechaPago}
           </TableCell>
           <TableCell component="th" scope="row">
-            ${row.idEstPag}
+            {row.idEstPag}
           </TableCell>
 
         </TableRow>

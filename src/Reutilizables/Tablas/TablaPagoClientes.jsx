@@ -15,7 +15,7 @@ import Paper from '@mui/material/Paper';
 import { getPagoCliente } from '../../helpers/pagoCliente';
 
 export const TablaPagoClientes = () => {
-  const [pagoCliente, setPagoCliente] = useState();
+  const [pagoCliente, setPagoCliente] = useState([]);
 
   useEffect(() => {
     getPagoCliente().then((pc) => {
@@ -66,7 +66,7 @@ export const TablaPagoClientes = () => {
               {row.idEstPago}
             </TableCell>
             <TableCell component="th" scope="row">
-            <Button className="verDetalle" variant="success"><Link to="/admin/PagoDetail1">Ver detalle</Link></Button>
+            <Button className="verDetalle" variant="success"><Link to="/admin/PagoDetail">Ver detalle</Link></Button>
             </TableCell>
           </TableRow>
         ))}

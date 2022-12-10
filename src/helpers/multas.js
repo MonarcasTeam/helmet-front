@@ -2,9 +2,9 @@ import { axiosApi } from "./api";
 
 export const getMultas = async() => {
 
-    const token = await localStorage.getItem('token');
+    const token =  localStorage.getItem('token');
 
-    const multasResp = axiosApi.get('/multas', {
+    const multasResp = await axiosApi.get('/multas', {
         headers: {
             'Authorization': 'Bearer ' + token
         }

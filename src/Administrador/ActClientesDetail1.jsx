@@ -116,7 +116,7 @@ export const ActClientesDetail1 = () => {
                     <tr className="buttonsAct">
                         <td><Button onClick={showImp} className="buttonsAct" variant="success">Implementaciones</Button></td>
                         <td><Button onClick={showAcc} className="buttonsAct" variant="success">Accidentes</Button></td>
-                        <td><Button onClick={showMulta} className="buttonsAct" variant="outline-sucess" disabled>Multas</Button></td>
+                        <td><Button onClick={showMulta} className="buttonsAct" variant="success">Multas</Button></td>
                         <td><Button onClick={showInf} className="buttonsAct" variant="success">Informes</Button></td>
                     </tr>
 
