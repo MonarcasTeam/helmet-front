@@ -1,13 +1,13 @@
 import React from 'react'
-import {
-    Document,
-    Page,
-    View,
-    Text,
-    Link,
-    Font,
-    StyleSheet,
-  } from '@react-pdf/renderer';
+// import {
+//     Document,
+//     Page,
+//     View,
+//     Text,
+//     Link,
+//     Font,
+//     StyleSheet,
+//   } from '@react-pdf/renderer';
 
 export const DescargarReporte = () => {
 
@@ -61,7 +61,7 @@ export const DescargarReporte = () => {
 
       
   return (
-    <Document>
+     <Document>
     <Page size="A4">
       <Link
         style={styles.title}
