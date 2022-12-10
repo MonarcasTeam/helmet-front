@@ -8,7 +8,7 @@ export const getMejoras = async() => {
         headers: {
             'Authorization': 'Bearer ' + token
         }
-    })
+    });
 
     const { data } = mejorasResp;
 
