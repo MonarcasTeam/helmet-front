@@ -4,7 +4,7 @@ export const getMejoras = async() => {
 
     const token = localStorage.getItem('token');
 
-    const mejorasResp = axiosApi.get('/mejoras', {
+    const mejorasResp = await  axiosApi.get('/mejoras', {
         headers: {
             'Authorization': 'Bearer ' + token
         }

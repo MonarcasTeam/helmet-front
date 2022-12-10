@@ -17,18 +17,17 @@ export const TablaImp = () => {
   useEffect(() => {
     getMejoras().then((m) => {
       setMejoras(m);
-    });
-
+    })
   },[])
 
   function createData(nombre, aprobadoPor, fecha) {
-    return { nombre, aprobadoPor, fecha }
+    return { nombre, aprobadoPor, fecha };
   }
 
   let rows = [];
 
   mejoras?.map((m) => {
-    rows.push(createData(m.nombre, m.aprobadoPor, m.fecha));
+    rows.push(createData(m.nombre, m.aprobadoPor, m.fecha))
   });
 
   return (
@@ -59,7 +58,7 @@ export const TablaImp = () => {
                 {row.aprobadoPor}
               </TableCell>
               <TableCell component="th" scope="row">
-                ${row.fecha}
+                {row.fecha}
               </TableCell>
 
             </TableRow>
@@ -67,5 +66,5 @@ export const TablaImp = () => {
         </TableBody>
       </Table>
     </TableContainer>
-  );
+  )
 }
