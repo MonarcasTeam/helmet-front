@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { TablaAccidentes } from '../Tablas/TablaAccidentes.jsx';
-import { TablaMulta } from '../Tablas/TablaMulta.jsx';
 
 export const ModalAcc = ({ setStateAcc }) => {
 

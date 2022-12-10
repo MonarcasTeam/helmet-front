@@ -1,6 +1,5 @@
 import React from 'react'
 import { HomeButtonAdmin } from "../Reutilizables/Botones/HomeButtonAdmin.jsx"
-import { CancelButtonU } from '../Reutilizables/Botones/CancelButtonU.jsx';
 import { Select } from 'antd';
 import { Input } from 'antd';
 import 'antd/dist/antd.css'
@@ -82,7 +81,6 @@ export const UsersAdmS = () => {
                 
                 <div className="buttonsA">
                     <SaveUser />
-                    <CancelButtonU />
                 </div>
                 <div className="homeA">
                     <HomeButtonAdmin />

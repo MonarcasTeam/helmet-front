@@ -18,7 +18,6 @@ import { RendimientoMain } from '../Administrador/RendimientoMain'
 import { ReportesMain } from '../Administrador/ReportesMain'
 import { UsersAdmMain } from '../Administrador/UsersAdmMain'
 import { UsersAdmS } from '../Administrador/UsersAdmS'
-import { UsersAdmT } from '../Administrador/UsersAdmT'
 import { UsersDetailAdm } from '../Administrador/UsersDetailAdm'
 import { UsersDetailSaved } from '../Administrador/UsersDetailSaved'
 import { LogSesion } from '../Auth/LogSesion'
@@ -104,12 +103,6 @@ export const AppRoutes = () => {
         <Route path="/admin/NewUser" element={
           <ProtectedRoute user={user}>
             <UsersAdmS />
-          </ProtectedRoute>
-        } />
-
-        <Route path='/admin/saveNewUser' element={
-          <ProtectedRoute user={user}>
-            <UsersAdmT />
           </ProtectedRoute>
         } />
 

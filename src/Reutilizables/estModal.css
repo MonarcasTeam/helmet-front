@@ -1,4 +1,4 @@
-.cuerpoModal{
+.cuerpoModal {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,7 @@
     display: flex;
 }
 
-.contModal{
+.contModal {
     margin: auto;
     width: 90%;
     max-width: 1000px;
@@ -22,7 +22,7 @@
     grid-auto-columns: 100%;
 }
 
-.contModalSoli{
+.contModalSoli {
     margin: auto;
     width: 90%;
     max-width: 500px;
@@ -36,15 +36,15 @@
     grid-auto-columns: 100%;
 }
 
-.titModal{
+.titModal {
     font-size: 2.5rem;
 }
 
-.tablaModal{
+.tablaModal {
     width: 90%;
 }
 
-.contModalS{
+.contModalS {
     margin: 0 auto;
     margin-bottom: auto;
     width: 90%;
@@ -61,10 +61,10 @@
     grid-auto-columns: 100%;
 }
 
-.titModalS{
+.titModalS {
     font-size: 2rem;
 }
 
-.tablaModalS{
+.tablaModalS {
     width: 90%;
 }
