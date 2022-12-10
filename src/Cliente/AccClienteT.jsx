@@ -10,39 +10,31 @@ export const AccClienteT = () => {
         <div className="cuerpo">
             <div className="repContenedor">
                 <div className="TittleAcc">
-                    <Result
-                        status="success"
-                        title="Reporte enviado con éxito"
-                    />
+                    <h2>Reporte de accidente Nº 100456</h2>
                 </div>
                 <table className="nuevoAcc2">
                     <tr>
-                        <td>Nombre trabajador :</td>
+                        <td><b>Nombre trabajador :</b></td>
                         <td>Pedro Picapiedra</td>
-                        <td>Fecha :</td>
+                        <td><b>Fecha :</b></td>
                         <td>28/08/2022</td>
-                        <td><b>Reporte Nº :</b></td>
-                        <td><b>100456</b></td>
                     </tr>
                     <br />
                     <tr>
-                        <td>Rut trabajador :</td>
+                        <td><b>Rut trabajador :</b></td>
                         <td>12345678-9</td>
+                        <td><b>Cargo :</b></td>
+                        <td>Bodeguero</td>
 
                     </tr>
                     <br />
                     <tr>
-                        <td>Cargo :</td>
-                        <td>Bodeguero</td>
-                    </tr>
-                    <br />
-                    <tr>
-                        <td>Ubicación :</td>
+                        <td><b>Ubicación :</b></td>
                         <td>Bodega</td>
                     </tr>
                     <br />
                     <tr>
-                        <td>Observación :</td>
+                        <td><b>Observación :</b></td>
                     </tr>
                 </table>
                 <div className="observ2">

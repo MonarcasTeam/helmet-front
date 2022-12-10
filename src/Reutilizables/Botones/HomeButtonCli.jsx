@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const HomeButtonCli = () => {
   return (
     <div>
-        <Button variant="success"><Link to="/cli"><img src="/img/home.png" alt="home_helmet" className='home_helmet' /> Home</Link></Button>
+        <Button variant="dark"><Link to="/cli"><img src="/img/home.png" alt="home_helmet" className='home_helmet' /> Home</Link></Button>
     </div>
   )
 }
