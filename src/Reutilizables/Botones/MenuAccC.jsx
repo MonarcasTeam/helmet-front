@@ -6,7 +6,7 @@ export const MenuAccC = () => {
 
     return (
         <div>
-            <Button variant="danger"><Link to="/cli/NewAcc">Nuevo accidente</Link></Button>
+            <Button variant="primary"><Link to="/cli/NewAcc">Nuevo accidente</Link></Button>
         </div>
     )
 }

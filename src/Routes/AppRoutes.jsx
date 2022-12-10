@@ -247,13 +247,7 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
-        <Route path='/cli/cancel' element={
-          <ProtectedRoute user={user}>
-            <AccClienteF />
-          </ProtectedRoute>
-        } />
-
-        <Route path='/cli/repEnviado' element={
+        <Route path='/cli/AccDetalle' element={
           <ProtectedRoute user={user}>
             <AccClienteT />
           </ProtectedRoute>

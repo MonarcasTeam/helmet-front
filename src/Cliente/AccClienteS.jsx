@@ -51,10 +51,8 @@ export const AccClienteS = () => {
                 <div className="observ">
                     <TextArea rows={4} />
                 </div>
-
                 <div className="buttons">
                     <SendButton />
-                    {/* <CancelButtonC /> */}
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />
