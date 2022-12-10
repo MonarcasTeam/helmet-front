@@ -59,10 +59,10 @@ export const TablaDetPagos = () => {
               {row.cantidad}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.valor}
+              {row.valor}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.total}
+              {row.total}
             </TableCell>
 
           </TableRow>
