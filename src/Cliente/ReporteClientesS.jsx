@@ -35,7 +35,6 @@ export const ReporteClientesS = () => {
                 </div>
                 <div className="buttons">
                     <BackButtonReport />
-                    <DownloadButton />
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />

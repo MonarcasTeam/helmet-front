@@ -15,11 +15,12 @@ export const TablaImp = () => {
   const [mejoras, setMejoras] = useState([]);
 
   useEffect(() => {
+    
     getMejoras().then((m) => {
       setMejoras(m);
     })
   },[])
-
+  console.log(mejoras)
   function createData(nombre, aprobadoPor, fecha) {
     return { nombre, aprobadoPor, fecha };
   }
