@@ -8,7 +8,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { getDetallePago } from '../../helpers/detallePago';
+import { getDetallePago } from '../../helpers/detallePagoCliente';
 
 export const TablaDetPagos = () => {
   const [detallePago, setDetallePago] = useState();
@@ -19,14 +19,14 @@ export const TablaDetPagos = () => {
     });
   },[]);
   console.log(detallePago)
-  function createData(nombre, cantidad, valor, total ) {
-    return { nombre, cantidad, valor, total };
+  function createData(nombre, cantidad, valor, total, neto, iva ) {
+    return { nombre, cantidad, valor, total, neto, iva };
   }
 
   let rows = [];
 
   detallePago?.map((dp) => {
-    rows.push(createData(dp.nombre, dp.cantidad, dp.valor,dp.total))
+    rows.push(createData(dp.nombre, dp.cantidad, dp.valor,dp.total, dp.neto,dp.iva))
   });
 
   return (
@@ -60,6 +60,33 @@ export const TablaDetPagos = () => {
             </TableCell>
             <TableCell component="th" scope="row">
               {row.valor}
+            </TableCell>
+            <TableCell component="th" scope="row">
+              {row.total}
+            </TableCell>
+
+          </TableRow>
+        ))}
+      </TableBody>
+      <TableHead>
+        <TableRow className='primeraFila'>
+          <TableCell><b>Neto</b></TableCell>
+          <TableCell><b>Iva</b></TableCell>
+          <TableCell><b>Total</b></TableCell>
+
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {rows.map((row, index) => (
+          <TableRow
+            key={row.nombre}
+            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+          >
+            <TableCell component="th" scope="row">
+              {row.neto}
+            </TableCell>
+            <TableCell component="th" scope="row">
+              {row.iva}
             </TableCell>
             <TableCell component="th" scope="row">
               {row.total}
