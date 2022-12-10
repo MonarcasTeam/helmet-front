@@ -1,16 +1,16 @@
 import { axiosApi } from "./api";
 
-export const getVisitas = async() => {
+export const getDetallePago = async() => {
 
     const token = localStorage.getItem('token');
 
-    const visitasResp = axiosApi.get('/visitas', {
+    const detallePagoResp = axiosApi.get('/detallePago', {
         headers: {
             'Authorization': 'Bearer ' + token
         }
-    });
+    })
 
-    const { data } = visitasResp;
+    const { data } = detallePagoResp;
 
     return data;   
 }
