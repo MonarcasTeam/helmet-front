@@ -67,7 +67,7 @@ export const TablaCapa = () => {
               {row.titulo}
             </TableCell>
             <TableCell component="th" scope="row">
-              {row.lugares}
+              {row.lugar}
             </TableCell>
             <TableCell component="th" scope="row">
               {row.materialAdd}
