@@ -247,6 +247,7 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
+
         <Route path='/cli/AccDetalle' element={
           <ProtectedRoute user={user}>
             <AccClienteT />

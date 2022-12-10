@@ -24,7 +24,7 @@ export const ContCliente = () => {
         <div className="twoTitle">
           <h4>Capacitaciones</h4>
         </div>
-        <div className="contTwo">
+        <div className="contTwos">
           <Alert
             message="27 capacitaciones"
             description="3 capacitaciones nuevas."

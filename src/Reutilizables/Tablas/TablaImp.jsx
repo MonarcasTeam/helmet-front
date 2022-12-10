@@ -15,12 +15,13 @@ export const TablaImp = () => {
   const [mejoras, setMejoras] = useState([]);
 
   useEffect(() => {
+    
     getMejoras().then((m) => {
       setMejoras(m);
     });
 
   },[])
-
+  console.log(mejoras)
   function createData(nombre, aprobadoPor, fecha) {
     return { nombre, aprobadoPor, fecha }
   }
@@ -44,7 +45,7 @@ export const TablaImp = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((rows, index) => (
+          {rows.map((row, index) => (
             <TableRow
               key={row.nombre}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
