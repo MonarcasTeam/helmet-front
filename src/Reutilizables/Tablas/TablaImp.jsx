@@ -12,22 +12,23 @@ import { getMejoras } from '../../helpers/mejoras';
 
 export const TablaImp = () => {
 
-  const [mejoras, setMejoras] = useState();
+  const [mejoras, setMejoras] = useState([]);
 
   useEffect(() => {
     getMejoras().then((m) => {
       setMejoras(m);
     });
-  },[]);
+
+  },[])
 
   function createData(nombre, aprobadoPor, fecha) {
-    return { nombre, aprobadoPor, fecha };
+    return { nombre, aprobadoPor, fecha }
   }
 
   let rows = [];
 
   mejoras?.map((m) => {
-    rows.push(createData(m.nombre, m.aprobadoPor, m.fecha))
+    rows.push(createData(m.nombre, m.aprobadoPor, m.fecha));
   });
 
   return (
@@ -43,7 +44,7 @@ export const TablaImp = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row, index) => (
+          {rows.map((rows, index) => (
             <TableRow
               key={row.nombre}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -66,5 +67,5 @@ export const TablaImp = () => {
         </TableBody>
       </Table>
     </TableContainer>
-  )
+  );
 }
