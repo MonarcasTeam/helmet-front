@@ -1,6 +1,6 @@
 // import Table from 'react-bootstrap/Table';
-// import Button from 'react-bootstrap/Button';
-// import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 import { useEffect, useState } from 'react';
 
@@ -66,7 +66,7 @@ export const TablaPagoClientes = () => {
               {row.idEstPago}
             </TableCell>
             <TableCell component="th" scope="row">
-              {row.idEstPago}
+            <Button className="verDetalle" variant="success"><Link to="/admin/PagoDetail1">Ver detalle</Link></Button>
             </TableCell>
           </TableRow>
         ))}
