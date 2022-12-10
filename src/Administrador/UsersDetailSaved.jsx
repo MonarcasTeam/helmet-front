@@ -2,7 +2,6 @@ import React from 'react'
 import { Result } from 'antd';
 import 'antd/dist/antd.css'
 import "../estilos.css"
-import { AceptButtonA } from '../Reutilizables/Botones/AceptButtonA';
 
 
 export const UsersDetailSaved = () => {
@@ -17,7 +16,7 @@ export const UsersDetailSaved = () => {
                     />
                 </div>
                 <div>
-                    <AceptButtonA />
+                    {/* <AceptButtonA /> */}
                 </div>
             </div>
         </div >

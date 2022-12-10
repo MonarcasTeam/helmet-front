@@ -6,7 +6,7 @@ import 'antd/dist/antd.css'
 import "../estilos.css"
 import CargarMenu from '../Reutilizables/CargarMenu.tsx';
 import { SaveClient } from '../Reutilizables/Botones/SaveClient.jsx';
-import { CancelButtonC } from '../Reutilizables/Botones/CancelButtonC.jsx';
+import { SaveClientDetail } from '../Reutilizables/Botones/SaveClientDetail.jsx';
 
 const { TextArea } = Input;
 
@@ -23,9 +23,10 @@ export const ClientAdmDetail = () => {
         <div className="cuerpo">
             <div className="repContenedor">
                 <div className="TittleNewClient">
-                    <h3>Registro de cliente nuevo</h3>
+                    <h3>Editar cliente *nombre cliente*</h3>
                 </div>
                 <table className="nuevoClient">
+                    {/* recoje la info del cliente y la muestra para editar o eliminar */}
                     <tr>
                         <td>Nombre empresa :</td>
                         <td><Input placeholder="Helmet Ltda." className="inputDefectoA" /></td>
@@ -87,8 +88,7 @@ export const ClientAdmDetail = () => {
                     </tr>
                 </table>
                 <div className="buttonsCli">
-                    <SaveClient />
-                    <CancelButtonC />
+                    <SaveClientDetail />
                 </div>
                 <div className="homeCli">
                     <HomeButtonAdmin />

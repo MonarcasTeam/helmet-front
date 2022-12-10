@@ -6,7 +6,6 @@ import 'antd/dist/antd.css'
 import "../estilos.css"
 import CargarMenu from '../Reutilizables/CargarMenu.tsx';
 import { SaveClient } from '../Reutilizables/Botones/SaveClient.jsx';
-import { CancelButtonC } from '../Reutilizables/Botones/CancelButtonC.jsx';
 
 const { TextArea } = Input;
 
@@ -88,7 +87,6 @@ export const ClientAdmS = () => {
                 </table>
                 <div className="buttonsCli">
                     <SaveClient />
-                    <CancelButtonC />
                 </div>
                 <div className="homeCli">
                     <HomeButtonAdmin />
