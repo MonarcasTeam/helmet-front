@@ -1,6 +1,5 @@
 import React from 'react'
 import { SendButton } from '../Reutilizables/Botones/SendButton.jsx';
-import { CancelButtonC } from '../Reutilizables/Botones/CancelButtonC.jsx';
 import { DatePicker, } from 'antd';
 import { Input } from 'antd';
 import 'antd/dist/antd.css'
@@ -55,7 +54,7 @@ export const AccClienteS = () => {
 
                 <div className="buttons">
                     <SendButton />
-                    <CancelButtonC />
+                    {/* <CancelButtonC /> */}
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />

@@ -1,34 +1,38 @@
-import React, { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react';
+import ToggleButton from 'react-bootstrap/ToggleButton';
+import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
+import { Link } from "react-router-dom";
+import { NuevoCliente } from '../Modals/NuevoCliente';
 
 export const SaveClient = () => {
 
-  function simulateNetworkRequest() {
-    return new Promise((resolve) => setTimeout(resolve, 2000));
+  const [stateNewClient, setStateNewClient] = useState(false);
+
+  const showNewClient = () => {
+    // setTimeout( () => {
+    setStateNewClient(true);
+    // }, 5000 );  
   }
-
-  const [isLoading, setLoading] = useState(false);
-
-  useEffect(() => {
-    if (isLoading) {
-      simulateNetworkRequest().then(() => {
-        setLoading(false);
-      });
-    }
-  }, [isLoading]);
-
-  const handleClick = () => setLoading(true);
 
   return (
     <div>
-      <Button
-        variant="success"
-        disabled={isLoading}
-        onClick={!isLoading ? handleClick : null}
-        href="/admin/saveNewClient"
-      >
-        {isLoading ? 'Guardando...' : 'Guardar'}
-      </Button>
+      {
+        (stateNewClient) ? "" :
+
+          <ToggleButtonGroup type="checkbox" defaultValue={[1, 3]} className="mb-2">
+            <ToggleButton onClick={showNewClient} id="tbg-check-1" variant="primary" value={2}>
+              Guardar
+            </ToggleButton>
+            <ToggleButton id="tbg-check-2" variant="success" value={2}>
+              <Link to="/admin/listClient">Volver</Link>
+            </ToggleButton>
+          </ToggleButtonGroup>
+
+      }
+
+      {
+        (stateNewClient) ? <NuevoCliente setStateNewClient={setStateNewClient} /> : ""
+      }
     </div>
   )
 }

@@ -11,7 +11,6 @@ import { AdmPagosDetail2 } from '../Administrador/AdmPagosDetail2'
 import { AdmPagosMain } from '../Administrador/AdmPagosMain'
 import { ClientAdmMain } from '../Administrador/ClientAdmMain'
 import { ClientAdmS } from '../Administrador/ClientAdmS'
-import { ClientAdmT } from '../Administrador/ClientAdmT'
 import { HelmetHomeAdm } from '../Administrador/HelmetHomeAdm'
 import { RendimientoDet1 } from '../Administrador/RendimientoDet1'
 import { RendimientoMain } from '../Administrador/RendimientoMain'
@@ -50,6 +49,7 @@ import { SubCliente } from '../Administrador/SubCliente'
 import { SoliClientesF } from '../Administrador/SoliClientesF'
 import { SoliClienteS } from '../Administrador/SoliClienteS'
 import { ActividadNew } from '../Profesional/ActividadNew'
+import { ClientAdmDetail } from '../Administrador/ClientAdmDetail'
 
 export const AppRoutes = () => {
 
@@ -130,15 +130,15 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
-        <Route path="/admin/saveNewClient" element={
-          <ProtectedRoute user={user}>
-            <ClientAdmT />
-          </ProtectedRoute>
-        } />
-
         <Route path="/admin/listClient" element={
           <ProtectedRoute user={user}>
             <ClientAdmMain />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/clientDetail" element={
+          <ProtectedRoute user={user}>
+            <ClientAdmDetail />
           </ProtectedRoute>
         } />
 

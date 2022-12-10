@@ -68,3 +68,23 @@
 .tablaModalS {
     width: 90%;
 }
+
+.contModalCli{
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    max-height: 60%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.buttonsModal{
+    margin: auto;
+    margin-top: -30px;
+    text-align: center;
+}
