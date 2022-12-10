@@ -2,9 +2,9 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
 
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-// //importaciones
+//importaciones
 // import Table from '@mui/material/Table';
 // import TableBody from '@mui/material/TableBody';
 // import TableCell from '@mui/material/TableCell';
@@ -16,14 +16,14 @@ import { Link } from "react-router-dom";
 
 export const TablaUsuarios = () => {
 
-  // const [user, setUser] = useState();
+  // const [user, setUser] = useState([]);
 
   // useEffect(() => {
   //   getUser().then((u) => {
   //     setUser(u);
-  //   });
-  // },[]);
-
+  //   })
+  // },[])
+  // console.log(user)
   // function createData(name, userName, roles, idCliente) {
   //   return { name, userName, roles, idCliente };
   // }
@@ -65,10 +65,10 @@ export const TablaUsuarios = () => {
 //                 {row.userName}
 //               </TableCell>
 //               <TableCell component="th" scope="row">
-//                 ${row.roles}
+//                 {row.roles}
 //               </TableCell>
 //               <TableCell component="th" scope="row">
-//                 ${row.idCliente}
+//                 {row.idCliente}
 //               </TableCell>
 
 //             </TableRow>
@@ -83,6 +83,7 @@ export const TablaUsuarios = () => {
           <th>Usuario</th>
           <th>Tipo de usuario</th>
           <th>Empresa</th>
+          <th>Detalle</th>
         </tr>
       </thead>
       <tbody className="tabAccidentes">
@@ -108,6 +109,6 @@ export const TablaUsuarios = () => {
           <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/detailUsers">Ver detalle</Link></Button></td>
         </tr>
       </tbody>
-    </Table>
+     </Table>
   )
 }
