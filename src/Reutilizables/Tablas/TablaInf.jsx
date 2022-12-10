@@ -18,7 +18,7 @@ export const TablaInf = () => {
       setRegistroinforme(i);
     });
   },[]);
-
+  console.log(registroinforme)
   function createData(fecha, nombreInfo) {
     return { fecha, nombreInfo };
   }

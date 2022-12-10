@@ -4,7 +4,7 @@ export const getAsesoria = async() => {
 
     const token = localStorage.getItem('token');
 
-    const asesoriaResp = axiosApi.get('/asesoria', {
+    const asesoriaResp = await axiosApi.get('/asesoria', {
         headers: {
             'Authorization': 'Bearer ' + token
         }

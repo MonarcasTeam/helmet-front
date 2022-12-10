@@ -4,7 +4,7 @@ export const getAccidente = async() => {
 
     const token = localStorage.getItem('token');
 
-    const accidenteResp = axiosApi.get('/accidente', {
+    const accidenteResp = await axiosApi.get('/accidente', {
         headers: {
             'Authorization': 'Bearer ' + token
         }

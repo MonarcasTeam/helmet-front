@@ -18,7 +18,7 @@ export const TablaMulta = () => {
       setMultas(m);
     });
   },[]);
-
+  console.log(multas)
   function createData(fecha, motivo, valor,fechaPago,idEstPag) {
     return { fecha, motivo, valor,fechaPago,idEstPag };
   }
