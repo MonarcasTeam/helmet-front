@@ -10,8 +10,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { getMejoras } from '../../helpers/mejoras';
 
-
-
 export const TablaImp = () => {
 
   const [mejoras, setMejoras] = useState();

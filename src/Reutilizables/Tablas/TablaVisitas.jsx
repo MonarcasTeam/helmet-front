@@ -11,11 +11,12 @@ import Paper from '@mui/material/Paper';
 import { getVisitas } from '../../helpers/visitas';
 
 export const TablaVisitas = () => {
+
   const [visitas, setVisitas] = useState();
 
   useEffect(() => {
-    getVisitas().then((m) => {
-      setVisitas(m);
+    getVisitas().then((v) => {
+      setVisitas(v);
     });
   },[]);
 
@@ -25,8 +26,8 @@ export const TablaVisitas = () => {
 
   let rows = [];
 
-  visitas?.map((m) => {
-    rows.push(createData(m.idCliente, m.fechaVisita, m.fechaSolicitud,m.idEstVis))
+  visitas?.map((v) => {
+    rows.push(createData(v.idCliente, v.fechaVisita, v.fechaSolicitud,v.idEstVis))
   });
 
   return (
