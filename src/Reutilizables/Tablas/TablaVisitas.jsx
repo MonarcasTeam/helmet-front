@@ -40,7 +40,6 @@ export const TablaVisitas = () => {
             <TableCell><b>Fecha agenda</b></TableCell>
             <TableCell><b>Fecha visita</b></TableCell>
             <TableCell><b>Estado</b></TableCell>
-
           </TableRow>
         </TableHead>
         <TableBody>
