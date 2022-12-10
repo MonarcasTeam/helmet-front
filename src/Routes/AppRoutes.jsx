@@ -50,7 +50,6 @@ import { SoliClientesF } from '../Administrador/SoliClientesF'
 import { SoliClienteS } from '../Administrador/SoliClienteS'
 import { ActividadNew } from '../Profesional/ActividadNew'
 import { ClientAdmDetail } from '../Administrador/ClientAdmDetail'
-import { DescargarReporte } from '../Profesional/DescargarReporte'
 
 export const AppRoutes = () => {
 
@@ -155,7 +154,7 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
-        <Route path="/admin/PagoDetail1" element={
+        <Route path="/admin/PagoDetail" element={
           <ProtectedRoute user={user}>
             <AdmPagosDetail1 />
           </ProtectedRoute>
@@ -352,12 +351,6 @@ export const AppRoutes = () => {
         <Route path='/prof/ReportCliente' element={
           <ProtectedRoute user={user}>
             <ReporteCli />
-          </ProtectedRoute>
-        } />
-
-        <Route path='/prof/DescReport' element={
-          <ProtectedRoute user={user}>
-            <DescargarReporte />
           </ProtectedRoute>
         } />
 
