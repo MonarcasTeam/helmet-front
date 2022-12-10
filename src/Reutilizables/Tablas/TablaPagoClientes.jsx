@@ -66,7 +66,7 @@ export const TablaPagoClientes = () => {
               {row.idEstPago}
             </TableCell>
             <TableCell component="th" scope="row">
-             boton
+              {row.idEstPago}
             </TableCell>
           </TableRow>
         ))}
