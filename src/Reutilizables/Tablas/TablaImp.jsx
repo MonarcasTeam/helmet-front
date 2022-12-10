@@ -44,7 +44,7 @@ export const TablaImp = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((rows, index) => (
+          {rows.map((row, index) => (
             <TableRow
               key={row.nombre}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
