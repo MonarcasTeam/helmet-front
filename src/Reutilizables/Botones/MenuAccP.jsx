@@ -7,12 +7,12 @@ export const MenuAccP = () => {
 
     return (
         <div>
-            <ToggleButtonGroup type="checkbox" defaultValue={[4, 6]} className="mb-2">
-                <ToggleButton id="tbg-check-2" variant="success" value={5}>
-                    Contactar cliente
+            <ToggleButtonGroup type="checkbox" defaultValue={[1, 2]} className="mb-2">
+                <ToggleButton id="tbg-check-3" variant="success" value={1}>
+                    <Link to="/prof/AccProf">Volver</Link>
                 </ToggleButton>
-                <ToggleButton id="tbg-check-3" variant="success" value={6}>
-                    <Link to="/prof/backP">Volver</Link>
+                <ToggleButton id="tbg-check-2" variant="danger" value={2}>
+                    Contactar cliente
                 </ToggleButton>
             </ToggleButtonGroup>
         </div>

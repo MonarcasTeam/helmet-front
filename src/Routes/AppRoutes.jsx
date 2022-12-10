@@ -306,12 +306,6 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
-        <Route path='/prof/backP' element={
-          <ProtectedRoute user={user}>
-            <RepProfesionalF />
-          </ProtectedRoute>
-        } />
-
         <Route path='/prof/ListClientes' element={
           <ProtectedRoute user={user}>
             <ListClientes />

@@ -1,27 +1,13 @@
 import Button from 'react-bootstrap/Button';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Select } from 'antd';
 import 'antd/dist/antd.css'
 import "../estilos.css"
 import { MenuAccP } from '../Reutilizables/Botones/MenuAccP';
 import { HomeButtonProf } from '../Reutilizables/Botones/HomeButtonProf';
+import { GuardarAccident } from '../Reutilizables/Botones/GuardarAccident';
 
 export const RepProfesionalS = () => {
-
-    function simulateNetworkRequest() {
-        return new Promise((resolve) => setTimeout(resolve, 2000));
-    }
-    const [isLoading, setLoading] = useState(false);
-
-    useEffect(() => {
-        if (isLoading) {
-            simulateNetworkRequest().then(() => {
-                setLoading(false);
-            });
-        }
-    }, [isLoading]);
-
-    const handleClick = () => setLoading(true);
 
     const { Option } = Select;
 
@@ -36,26 +22,20 @@ export const RepProfesionalS = () => {
                     <h3>Reporte de accidente Nº 100456</h3>
                 </div>
                 <div className="guardar">
-                    <Button
-                        variant="success"
-                        disabled={isLoading}
-                        onClick={!isLoading ? handleClick : null}
-                    >
-                        {isLoading ? 'Guardando…' : 'Guardar cambios'}
-                    </Button>
+                    <GuardarAccident />
                 </div>
                 <table className="nuevoAcc2">
                     <tr>
-                        <td>Nombre trabajador :</td>
+                        <td><b>Nombre trabajador :</b></td>
                         <td>Pedro Picapiedra</td>
-                        <td>Fecha :</td>
+                        <td><b>Fecha :</b></td>
                         <td>28/08/2022</td>
                         <td><b>Reporte Nº :</b></td>
                         <td><b>100456</b></td>
                     </tr>
                     <br />
                     <tr>
-                        <td>Rut trabajador :</td>
+                        <td><b>Rut trabajador :</b></td>
                         <td>12345678-9</td>
                         <td></td>
                         <td></td>
@@ -77,17 +57,17 @@ export const RepProfesionalS = () => {
                     </tr>
                     <br />
                     <tr>
-                        <td>Cargo :</td>
+                        <td><b>Cargo :</b></td>
                         <td>Bodeguero</td>
                     </tr>
                     <br />
                     <tr>
-                        <td>Ubicación :</td>
+                        <td><b>Ubicación :</b></td>
                         <td>Bodega</td>
                     </tr>
                     <br />
                     <tr>
-                        <td>Observación :</td>
+                        <td><b>Observación :</b></td>
                     </tr>
                 </table>
                 <div className="observ2">
