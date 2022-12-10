@@ -1,9 +1,6 @@
 import React from 'react'
 import 'antd/dist/antd.css'
 import "../estilos.css"
-import { BackButtonC } from '../Reutilizables/Botones/BackButtonC';
-import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli';
-import { DownloadButton } from '../Reutilizables/Botones/DownloadButton';
 import { HomeButtonProf } from '../Reutilizables/Botones/HomeButtonProf';
 import { BackButtonRep } from '../Reutilizables/Botones/BackButtonRep';
 
@@ -12,7 +9,7 @@ export const ReporteCli = () => {
         <div className="cuerpo">
             <div className="repContenedor">
                 <div className="TittleRep">
-                    <h1>Reporte Nº 100001</h1>
+                    <h2>Reporte Nº 100001</h2>
                 </div>
                 <table className="repDetail">
                     <tr>
@@ -36,7 +33,6 @@ export const ReporteCli = () => {
                 </div>
                 <div className="buttons">
                     <BackButtonRep />
-                    <DownloadButton />
                 </div>
                 <div className="homeB">
                     <HomeButtonProf />
