@@ -19,14 +19,14 @@ export const TablaCapa = () => {
     });
   },[]);
   console.log(capacitaciones)
-  function createData(idUsuario, fecha, nAsistentes, titulo, lugares, materialAdd) {
-    return { idUsuario, fecha, nAsistentes, titulo, lugares, materialAdd };
+  function createData(idUsuario, fecha, nAsistentes, titulo, lugar, materialAdd) {
+    return { idUsuario, fecha, nAsistentes, titulo, lugar, materialAdd };
   }
 
   let rows = [];
 
   capacitaciones?.map((c) => {
-    rows.push(createData(c.idUsuario, c.capacitacionesfecha, c.nAsistentes, c.titulo, c.lugares, c.materialAdd))
+    rows.push(createData(c.idUsuario, c.fecha, c.nAsistentes, c.titulo, c.lugar, c.materialAdd))
   });
 
   return (
@@ -61,16 +61,16 @@ export const TablaCapa = () => {
               {row.fecha}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.nAsistentes}
+              {row.nAsistentes}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.titulo}
+              {row.titulo}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.lugares}
+              {row.lugar}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.materialAdd}
+              {row.materialAdd}
             </TableCell>
 
           </TableRow>

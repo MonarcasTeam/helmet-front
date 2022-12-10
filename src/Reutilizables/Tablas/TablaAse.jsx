@@ -58,7 +58,7 @@ export const TablaAse = () => {
               {row.fecha}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.motivo}
+              {row.motivo}
             </TableCell>
 
           </TableRow>
