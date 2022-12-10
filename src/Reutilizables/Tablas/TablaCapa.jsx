@@ -18,7 +18,7 @@ export const TablaCapa = () => {
       setCapacitaciones(c);
     });
   },[]);
-
+  console.log(capacitaciones)
   function createData(idUsuario, fecha, nAsistentes, titulo, lugares, materialAdd) {
     return { idUsuario, fecha, nAsistentes, titulo, lugares, materialAdd };
   }

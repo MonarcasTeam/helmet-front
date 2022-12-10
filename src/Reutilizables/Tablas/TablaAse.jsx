@@ -16,9 +16,9 @@ export const TablaAse = () => {
   useEffect(() => {
     getAsesoria().then((a) => {
       setAsesoria(a);
-    });
-  },[]);
-
+    })
+  },[])
+  console.log(asesoria)
   function createData(idUsuario, fecha, motivo) {
     return { idUsuario, fecha, motivo};
   }

@@ -22,7 +22,7 @@ export const TablaPagoClientes = () => {
       setPagoCliente(pc);
     });
   },[]);
-
+  console.log(pagoCliente)
   function createData(nombreEmpresa, rutEmpresa, idEstPago) {
     return { nombreEmpresa, rutEmpresa, idEstPago };
   }

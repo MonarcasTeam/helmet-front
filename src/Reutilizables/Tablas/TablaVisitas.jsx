@@ -19,7 +19,7 @@ export const TablaVisitas = () => {
       setVisitas(v);
     });
   },[]);
-
+  console.log(visitas)
   function createData(idCliente, fechaVisita, fechaSolicitud,idEstVis ) {
     return { idCliente, fechaVisita, fechaSolicitud,idEstVis };
   }
@@ -58,10 +58,10 @@ export const TablaVisitas = () => {
                 {row.fechaVisita}
               </TableCell>
               <TableCell component="th" scope="row">
-                ${row.fechaSolicitud}
+                {row.fechaSolicitud}
               </TableCell>
               <TableCell component="th" scope="row">
-                ${row.idEstVis}
+                {row.idEstVis}
               </TableCell>
 
             </TableRow>

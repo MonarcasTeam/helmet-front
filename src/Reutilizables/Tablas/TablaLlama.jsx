@@ -18,7 +18,7 @@ export const TablaLlama = () => {
       setRegistrollamadas(ll);
     });
   },[]);
-
+  console.log(registrollamadas)
   function createData(idUsuario, fecha, hora, asunto) {
     return { idUsuario, fecha, hora, asunto};
   }
@@ -63,7 +63,7 @@ export const TablaLlama = () => {
               {row.hora}
             </TableCell>
             <TableCell component="th" scope="row">
-              ${row.asunto}
+              {row.asunto}
             </TableCell>
 
           </TableRow>

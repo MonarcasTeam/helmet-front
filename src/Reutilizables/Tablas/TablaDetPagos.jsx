@@ -18,7 +18,7 @@ export const TablaDetPagos = () => {
       setDetallePago(dp);
     });
   },[]);
-
+  console.log(detallePago)
   function createData(nombre, cantidad, valor, total ) {
     return { nombre, cantidad, valor, total };
   }

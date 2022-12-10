@@ -21,7 +21,7 @@ export const TablaSolicitudCli = () => {
       setMejoras(m);
     });
   }, []);
-
+  console.log(mejoras)
   function createData(nombre, aprobadoPor, fecha) {
     return { nombre, aprobadoPor, fecha };
   }
