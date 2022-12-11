@@ -11,28 +11,28 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
-import { getMejoras } from '../../helpers/mejoras';
+import { getSolicitudes } from '../../helpers/solicitudes';
 
 
 
 export const TablaSolicitudCli = () => {
 
-  const [mejoras, setMejoras] = useState();
+  const [solicitudes, setSolicitudes] = useState();
 
   useEffect(() => {
-    getMejoras().then((m) => {
-      setMejoras(m);
+    getSolicitudes().then((m) => {
+      setSolicitudes(m);
     });
   }, []);
-  console.log(mejoras)
-  function createData(nombre, aprobadoPor, fecha) {
-    return { nombre, aprobadoPor, fecha };
+  console.log(solicitudes)
+  function createData(solicitud, fecha, idEstaddo) {
+    return { solicitud, fecha, idEstaddo };
   }
 
   let rows = [];
 
-  mejoras?.map((m) => {
-    rows.push(createData(m.nombre, m.aprobadoPor, m.fecha))
+  solicitudes?.map((m) => {
+    rows.push(createData(m.solicitud, m.fecha, m.idEstaddo))
   });
 
   return (
@@ -52,20 +52,20 @@ export const TablaSolicitudCli = () => {
         <TableBody>
           {rows.map((row, index) => (
             <TableRow
-              key={row.nombre}
+              key={row.solicitud}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
                 <b>{index + 1}</b>
               </TableCell>
               <TableCell component="th" scope="row">
-                {row.nombre}
+                {row.solicitud}
               </TableCell>
               <TableCell component="th" scope="row">
-                {row.aprobadoPor}
+                {row.fecha}
               </TableCell>
               <TableCell component="th" scope="row">
-                ${row.fecha}
+                {row.idEstaddo}
               </TableCell>
               <TableCell component="th" scope="row">
                 <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/SoliClienteS">Ver detalle</Link></Button></td>
