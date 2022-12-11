@@ -20,8 +20,20 @@ const handleChange = (value) => {
 
 // fecha y hora actuales
 var today = new Date();
+
+// obtener la fecha y la hora
 var now = today.toLocaleString();
 console.log(now);
+
+const MyComponents = {
+    DatePicker: function DatePicker(props) {
+        return now;
+    }
+}
+
+function BlueDatePicker() {
+    return <MyComponents.DatePicker color="blue" />;
+}
 
 export const ReporteNew = () => {
     return (
@@ -48,8 +60,8 @@ export const ReporteNew = () => {
                         </td>
                         <td><b>Fecha y hora :</b></td>
                         <td>
-                            {/* Insertar fecha y hora de sistema */}
-                            10/10/2020 16:00 hrs
+                            {/* fecha y hora por sistema */}
+                            <BlueDatePicker />
                         </td>
                     </tr>
                     <br />

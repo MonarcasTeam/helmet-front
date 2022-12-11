@@ -33,7 +33,6 @@ import { ReporteNew } from '../Profesional/ReporteNew'
 import { ReportesCli } from '../Profesional/ReportesCli'
 import { RepProfesionalF } from '../Profesional/RepProfesionalF'
 import { RepProfesionalS } from '../Profesional/RepProfesionalS'
-import { RepSucess } from '../Profesional/RepSucess'
 import { ContFooter } from '../Reutilizables/ContFooter'
 import { ContHead } from '../Reutilizables/ContHead'
 import { MenuAdm } from '../Reutilizables/Menus/MenuAdm';
@@ -81,11 +80,6 @@ export const AppRoutes = () => {
       {
         (user.active == true && user.role == "ROLE_CUSTOMER") ? <MenuCliente /> : ""
       }
-
-
-
-
-
 
       <Routes>
 
@@ -333,12 +327,6 @@ export const AppRoutes = () => {
         <Route path='/prof/NewReport' element={
           <ProtectedRoute user={user}>
             <ReporteNew />
-          </ProtectedRoute>
-        } />
-
-        <Route path='/prof/ReportSucess' element={
-          <ProtectedRoute user={user}>
-            <RepSucess />
           </ProtectedRoute>
         } />
 
