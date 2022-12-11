@@ -7,7 +7,7 @@ import "../estilos.css"
 import CargarMenu from '../Reutilizables/CargarMenu.tsx';
 import { SaveClient } from '../Reutilizables/Botones/SaveClient.jsx';
 import { SaveClientDetail } from '../Reutilizables/Botones/SaveClientDetail.jsx';
-import { getClientes } from '../helpers/clientesEditar';
+// import { getClientes } from '../helpers/clientesEditar';
 
 const { TextArea } = Input;
 
@@ -29,8 +29,8 @@ export const ClientAdmDetail = () => {
     // },[])
 
     // console.log(clientes)
-    // function createData(nombreEmpresa, rutEmpresa) {
-    //   return { nombreEmpresa, rutEmpresa };
+    // function createData(nombreEmpresa, rutEmpresa, nombreContacto, email, diaPago, idUsuario , nombreContrato {
+    //   return { nombreEmpresa, rutEmpresa, nombreContacto, email,diaPago, idUsuario, nombreContrato };
     // }
      
     return (

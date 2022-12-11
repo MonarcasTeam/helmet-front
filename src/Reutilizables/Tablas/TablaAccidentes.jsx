@@ -1,6 +1,6 @@
 // import Table from 'react-bootstrap/Table';
-// import Button from 'react-bootstrap/Button';
-// import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 import { useEffect, useState } from 'react';
 
@@ -46,6 +46,7 @@ export const TablaAccidentes = () => {
             <TableCell><b>Fecha</b></TableCell>
             <TableCell><b>Gravedad</b></TableCell>
             <TableCell><b>Estado</b></TableCell>
+            <TableCell><b>Detalle</b></TableCell>
 
           </TableRow>
         </TableHead>
@@ -69,6 +70,9 @@ export const TablaAccidentes = () => {
               </TableCell>
               <TableCell component="th" scope="row">
                 {row.idEstadoA}
+              </TableCell>
+              <TableCell component="th" scope="row">
+              <td className="estadoButton"><Button className="verEstado" variant="success"><Link to="/prof/accProfS">Ver estado</Link></Button></td>
               </TableCell>
 
             </TableRow>
