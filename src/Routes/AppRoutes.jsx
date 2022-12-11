@@ -81,11 +81,6 @@ export const AppRoutes = () => {
         (user.active == true && user.role == "ROLE_CUSTOMER") ? <MenuCliente /> : ""
       }
 
-
-
-
-
-
       <Routes>
 
         {/* rutas para login */}
