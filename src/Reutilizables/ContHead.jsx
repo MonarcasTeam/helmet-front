@@ -10,7 +10,7 @@ export const ContHead = () => {
         </a>
       </div>
       <div className="welcomeU">
-        <h2>Bienvenido, *nombre de usuario*</h2>
+        <h2>Bienvenido</h2>
       </div>
       <div className="sesion">
         <CerrarSesion />
