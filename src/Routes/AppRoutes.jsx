@@ -49,6 +49,7 @@ import { SoliClientesF } from '../Administrador/SoliClientesF'
 import { SoliClienteS } from '../Administrador/SoliClienteS'
 import { ActividadNew } from '../Profesional/ActividadNew'
 import { ClientAdmDetail } from '../Administrador/ClientAdmDetail'
+import { ReportClientesAdm } from '../Administrador/ReportClientesAdm'
 
 export const AppRoutes = () => {
 
@@ -205,6 +206,12 @@ export const AppRoutes = () => {
         <Route path="/admin/ReportesMain" element={
           <ProtectedRoute user={user}>
             <ReportesMain />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/ReportesCliAdm" element={
+          <ProtectedRoute user={user}>
+            <ReportClientesAdm />
           </ProtectedRoute>
         } />
 

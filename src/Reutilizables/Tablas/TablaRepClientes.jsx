@@ -65,7 +65,7 @@ export const TablaRepClientes = () => {
               {row.fecha}
             </TableCell>
             <TableCell component="th" scope="row">
-            <td className="detalleButton"><Button className="verDetalle" variant="success">Visualizar</Button></td>
+            <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/ReportesCliAdm">Visualizar</Link></Button></td>
             </TableCell>
 
           </TableRow>
