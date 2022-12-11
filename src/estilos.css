@@ -327,9 +327,28 @@
     float: left;
 }
 
+.nuevaActividad {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    float: left;
+}
+
+.fechaAct{
+    margin-left: -20px;
+}
+
 .nuevoUser td {
     width: auto;
     height: auto;
+    margin-right: 20px;
+}
+
+.nuevaActividad td {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
     margin-right: 20px;
 }
 
@@ -341,6 +360,10 @@
 .inputDefectoA {
     width: 350px;
     margin: 0 20px;
+}
+
+.inputDefectoB {
+    width: 300px;
 }
 
 .nivel {
@@ -568,4 +591,24 @@ a:hover,
 a:active {
     color: white;
     text-decoration: none;
+}
+
+#visita{
+    display: none;
+}
+
+#capacitacion{
+    display: none;
+}
+
+#asesoria{
+    display: none;
+}
+
+#implementacion{
+    display: none;
+}
+
+#multa{
+    display: none;
 }
