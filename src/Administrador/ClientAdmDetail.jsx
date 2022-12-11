@@ -7,6 +7,7 @@ import "../estilos.css"
 import CargarMenu from '../Reutilizables/CargarMenu.tsx';
 import { SaveClient } from '../Reutilizables/Botones/SaveClient.jsx';
 import { SaveClientDetail } from '../Reutilizables/Botones/SaveClientDetail.jsx';
+import { getClientes } from '../helpers/clientesEditar';
 
 const { TextArea } = Input;
 
@@ -19,6 +20,19 @@ const handleChange = (value) => {
 };
 
 export const ClientAdmDetail = () => {
+    // const [clientes, setClientes] = useState([]);
+
+    // useEffect(() => {
+    //   getClientes().then((c) => {
+    //     setClientes(c);
+    //   });
+    // },[])
+
+    // console.log(clientes)
+    // function createData(nombreEmpresa, rutEmpresa) {
+    //   return { nombreEmpresa, rutEmpresa };
+    // }
+     
     return (
         <div className="cuerpo">
             <div className="repContenedor">
