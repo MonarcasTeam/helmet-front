@@ -7,10 +7,6 @@ import "../estilos.css"
 import CargarMenu from '../Reutilizables/CargarMenu.tsx';
 import { SaveClient } from '../Reutilizables/Botones/SaveClient.jsx';
 
-const { TextArea } = Input;
-
-const handleClick = () => setLoading(true);
-
 const { Option } = Select;
 
 const handleChange = (value) => {
