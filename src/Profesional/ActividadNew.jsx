@@ -1,27 +1,42 @@
-import React from 'react'
-import { Input } from 'antd';
-import { Select } from 'antd';
+import React, { useState } from 'react'
+import { Input, TimePicker } from 'antd';
 import 'antd/dist/antd.css'
 import "../estilos.css"
-import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli.jsx';
+import { DatePicker, } from 'antd';
 import { MenuActividad } from '../Reutilizables/Botones/MenuActividad';
-
-const { TextArea } = Input;
+import { FormControl, MenuItem, Select } from '@mui/material';
+import { HomeButtonProf } from '../Reutilizables/Botones/HomeButtonProf';
 
 const onChange = (date, dateString) => {
     console.log(date, dateString);
 };
 
-const { Option } = Select;
-
-const handleChange = (value) => {
-    console.log(`selected ${value}`);
-};
-
 // fecha y hora actuales
+var today = new Date();
 
+// obtener la fecha y la hora
+var now = today.toLocaleString();
+console.log(now);
 
+const MyComponents = {
+    DatePicker: function DatePicker(props) {
+        return now;
+    }
+}
+
+function BlueDatePicker() {
+    return <MyComponents.DatePicker color="blue" />;
+}
+
+// selector de combobox
 export const ActividadNew = () => {
+
+    const [showForm, setShowForm] = useState(0)
+    const onChangeSelect = (e) => {
+        const value = e.target.value;
+        console.log(value);
+        setShowForm(value);
+    }
     return (
         <div className="cuerpo">
             <div className="repContenedor">
@@ -32,40 +47,78 @@ export const ActividadNew = () => {
                     <tr>
                         <td><b>Tipo de actividad :</b></td>
                         <td>
-                            <Select
-                                defaultValue="Seleccionar"
-                                style={{
-                                    width: 150,
-                                    marginRight: 20,
-                                }}
-                                onChange={handleChange}
-                            >
-                                <Option value="Visita">Visita</Option>
-                                <Option value="Capacitación">Capacitación</Option>
-                                <Option value="Asesoría">Asesoría</Option>
-                                <Option value="Implementación">Implementación</Option>
-                                <Option value="Multa">Multa</Option>
-                            </Select>
+                            <FormControl fullWidth>
+                                <Select
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={showForm}
+                                    onChange={onChangeSelect}
+                                    sx={{ m: 4 }}
+                                    style={{
+                                        width: 150,
+                                        height: 40,
+                                        marginRight: 20,
+                                        fontSize: 16,
+                                    }}
+                                >
+                                    <MenuItem value={1}>Asesoria</MenuItem>
+                                    <MenuItem value={2}>Capacitación</MenuItem>
+                                    <MenuItem value={3}>Implementacion</MenuItem>
+                                    <MenuItem value={4}>Multa</MenuItem>
+                                    <MenuItem value={5}>Visita</MenuItem>
+                                </Select>
+                            </FormControl>
                         </td>
                         <td><b>Fecha y hora :</b></td>
                         <td>
                             {/* Insertar fecha y hora de sistema */}
-                            10/10/2020 16:00 hrs
+                            <BlueDatePicker />
                         </td>
                     </tr>
-                    <br />
-                    {/* formulario según selección */}
-                    <tr>
-                        <td>asdasd</td>
-                    </tr>
                 </table>
-            
+                {
+                    //Contenido Asesoria
+                    (showForm == 1) &&
+
+                    <table className="nuevaActividad">
+                        <tr>
+                            <td><b>Fecha :</b></td>
+                            <td><DatePicker onChange={onChange} /></td>
+                        </tr>
+                        <br />
+                        <tr>
+                            <td><b>Motivo :</b></td>
+                            <td><Input placeholder="Uso extintores" className="inputDefectoB" /></td>
+                        </tr>
+                        
+                    </table>
+                }
+
+{
+                    //Contenido Capacitación
+                    (showForm == 2) &&
+
+                    <table className="nuevaActividad">
+                        <tr>
+                            <td><b>Fecha :</b></td>
+                            <td><DatePicker onChange={onChange} /> <TimePicker onChange={onChange} /></td>
+                        </tr>
+                        <br />
+                        <tr>
+                            <td><b>Asunto :</b></td>
+                            <td><Input placeholder="Uso extintores" className="inputDefectoB" /></td>
+                            <td><b>Asistentes :</b></td>
+                            <td><Input placeholder="Uso extintores" className="inputDefectoB" /></td>
+                        </tr>
+                        
+                    </table>
+                }
 
                 <div className="buttons">
                     <MenuActividad />
                 </div>
                 <div className="homeB">
-                    <HomeButtonCli />
+                    <HomeButtonProf />
                 </div>
             </div>
         </div >
