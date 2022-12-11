@@ -1,8 +1,8 @@
 import React from 'react'
 import 'antd/dist/antd.css'
 import "../estilos.css"
-import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli';
-import { BackButtonReport } from '../Reutilizables/Botones/BackButtonReport';
+import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin';
+import { BackButtonReportAdm } from '../Reutilizables/Botones/BackButtonReportAdm';
 
 export const ReportClientesAdm = () => {
     return (
@@ -32,10 +32,10 @@ export const ReportClientesAdm = () => {
                     </p>
                 </div>
                 <div className="buttons">
-                    <BackButtonReport />
+                    <BackButtonReportAdm />
                 </div>
                 <div className="homeB">
-                    <HomeButtonCli />
+                    <HomeButtonAdmin />
                 </div>
             </div>
         </div>

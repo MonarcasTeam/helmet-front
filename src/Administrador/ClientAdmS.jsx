@@ -72,8 +72,8 @@ export const ClientAdmS = () => {
                             }}
                             onChange={handleChange}
                         >
-                            <Option value="vproboste">Verónica Proboste</Option>
-                            <Option value="gcarrasco">Guillermo Carrasco</Option>
+                            <Option value={1}>Prof 1</Option>
+                            <Option value={2}>Prof 2</Option>
                         </Select>
                         </td>
                     </tr>
