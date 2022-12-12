@@ -9,7 +9,7 @@ export const ContAdministrador = () => {
     <div>
       <div className="boxOne">
         <div className="oneTitle">
-          <h5>Accidentes</h5>
+          <h5>Clientes</h5>
         </div>
         <br />
         <div className="contOne">
