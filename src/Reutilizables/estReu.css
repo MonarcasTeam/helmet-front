@@ -36,7 +36,11 @@ body {
     width: 300px;
     height: auto;
     margin: auto;
-    color: white;
+    color: black;
+}
+
+.formLogin a{
+    color: black;
 }
 
 .headerBox {

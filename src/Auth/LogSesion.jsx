@@ -65,12 +65,12 @@ export const LogSesion = () => {
       <div className="headLogin">
         <div>
           <img className="imgHelmet" src="img/logo.png" />
-          <h1>Bienvenido</h1>
+          <h1>Bienvenido a Helmet</h1>
         </div>
         <div className='formLogin'>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Usuario</Form.Label>
+              <Form.Label><b>Usuario</b></Form.Label>
               <Form.Control
                 onChange={onInputChange}
                 name="username"
@@ -78,14 +78,14 @@ export const LogSesion = () => {
                 placeholder="Ingrese usuario" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Contraseña</Form.Label>
+              <Form.Label><b>Contraseña</b></Form.Label>
               <Form.Control
                 onChange={onInputChange}
                 name="password"
                 type="password"
                 placeholder="Contraseña" />
               <br />
-              <a href="#">Olvidé mi contraseña</a>
+              <a href="#" className='olvido'>Olvidé mi contraseña</a>
             </Form.Group>
             <Button variant="success" type="submit" onClick={onClickLogin}>
               Iniciar Sesión
