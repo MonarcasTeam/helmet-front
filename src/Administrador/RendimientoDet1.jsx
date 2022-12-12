@@ -14,7 +14,7 @@ export const RendimientoDet1 = () => {
                     <h2>Rendimiento Profesional 1</h2>
                 </div>
                 <div className="titEmpresa">
-                    <h4>Empresa 1</h4>
+                    <h4>Cliente 1</h4>
                 </div>
                 <div className="rendEmpresa">
                     <div className="accContent">
@@ -41,7 +41,7 @@ export const RendimientoDet1 = () => {
                     </div>
                 </div>
                 <div className="titEmpresa">
-                    <h4>Empresa 2</h4>
+                    <h4>Cliente 2</h4>
                 </div>
                 <div className="rendEmpresa">
                     <div className="accContent">
