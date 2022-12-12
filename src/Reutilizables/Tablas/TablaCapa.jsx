@@ -61,7 +61,7 @@ export const TablaCapa = () => {
               {row.fecha}
             </TableCell>
             <TableCell component="th" scope="row">
-              {row.nAsistentes}
+              11
             </TableCell>
             <TableCell component="th" scope="row">
               {row.titulo}
