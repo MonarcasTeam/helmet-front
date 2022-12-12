@@ -27,7 +27,7 @@ export const TablaRendProfesionales = () => {
           <td>gcarrasco</td>
           <td>22.222.222-2</td>
           <td>2 clientes</td>
-          <td className="detalleButton"><Button className="verDetalle" variant="success">Ver reportes</Button></td>
+          <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/RendimientoDet2">Ver reportes</Link></Button></td>
         </tr>
       </tbody>
     </Table>

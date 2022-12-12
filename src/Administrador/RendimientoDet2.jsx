@@ -5,13 +5,13 @@ import "../estilos.css"
 import { HomeButtonAdmin } from '../Reutilizables/Botones/HomeButtonAdmin'
 import { BackButtonRend } from '../Reutilizables/Botones/BackButtonRend';
 
-export const RendimientoDet1 = () => {
+export const RendimientoDet2 = () => {
 
     return (
         <div className="cuerpo">
             <div className="repContenedor">
                 <div className="titContenedor">
-                    <h2>Rendimiento Profesional 1</h2>
+                    <h2>Rendimiento Profesional 2</h2>
                 </div>
                 <div className="titEmpresa">
                     <h4>Empresa 1</h4>

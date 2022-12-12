@@ -50,6 +50,7 @@ import { ClientAdmDetail } from '../Administrador/ClientAdmDetail'
 import { ReportClientesAdm } from '../Administrador/ReportClientesAdm'
 import { UsersDetailAdm2 } from '../Administrador/UsersDetailAdm2'
 import { UsersDetailAdm3 } from '../Administrador/UsersDetailAdm3'
+import { RendimientoDet2 } from '../Administrador/RendimientoDet2'
 
 export const AppRoutes = () => {
 
@@ -230,6 +231,12 @@ export const AppRoutes = () => {
         <Route path="/admin/RendimientoDet1" element={
           <ProtectedRoute user={user}>
             <RendimientoDet1 />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/RendimientoDet2" element={
+          <ProtectedRoute user={user}>
+            <RendimientoDet2 />
           </ProtectedRoute>
         } />
 
