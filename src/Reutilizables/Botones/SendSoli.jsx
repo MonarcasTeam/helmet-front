@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { SoliEnviada } from '../Modals/SoliEnviada';
 
 export const SendSoli = () => {
 
@@ -28,7 +29,7 @@ export const SendSoli = () => {
       }
 
       {
-        (stateSoliEnviada) ? <NuevoCliente setStateSoliEnviada={setStateSoliEnviada} /> : ""
+        (stateSoliEnviada) ? <SoliEnviada setStateSoliEnviada={setStateSoliEnviada} /> : ""
       }
     </div>
   )

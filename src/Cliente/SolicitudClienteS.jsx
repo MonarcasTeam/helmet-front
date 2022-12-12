@@ -6,7 +6,6 @@ import 'antd/dist/antd.css'
 import "../estilos.css"
 import { HomeButtonCli } from '../Reutilizables/Botones/HomeButtonCli.jsx';
 import { SendSoli } from '../Reutilizables/Botones/SendSoli.jsx';
-import { CancelSoli } from '../Reutilizables/Botones/CancelSoli.jsx';
 
 const { TextArea } = Input;
 
@@ -62,7 +61,6 @@ export const SolicitudClienteS = () => {
 
                 <div className="buttons">
                     <SendSoli /> 
-                    <CancelSoli />
                 </div>
                 <div className="homeB">
                     <HomeButtonCli />
