@@ -71,4 +71,3 @@ export const SolicitudClienteS = () => {
         </div >
     )
 }
-// el flip 
