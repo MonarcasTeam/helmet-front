@@ -61,7 +61,7 @@ export const SolicitudClienteS = () => {
                 </div>
 
                 <div className="buttons">
-                    <SendSoli />
+                    <SendSoli /> 
                     <CancelSoli />
                 </div>
                 <div className="homeB">

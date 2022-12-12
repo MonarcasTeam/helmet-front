@@ -184,8 +184,8 @@ export const ActividadNew = () => {
                                         fontSize: 15,
                                     }}
                                 >
-                                    <MenuItem value={6}>Pendiente</MenuItem>
-                                    <MenuItem value={7}>Al día</MenuItem>
+                                    <MenuItem value="Pendiente">Pendiente</MenuItem>
+                                    <MenuItem value="Al día">Al día</MenuItem>
                                 </Select>
                             </FormControl></td>
                         </tr>
