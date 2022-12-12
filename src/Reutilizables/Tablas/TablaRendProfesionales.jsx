@@ -11,6 +11,7 @@ export const TablaRendProfesionales = () => {
           <th>Usuario</th>
           <th>Rut</th>
           <th>Clientes</th>
+          <th>Detalle</th>
         </tr>
       </thead>
       <tbody className="tabAccidentes">
