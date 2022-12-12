@@ -70,7 +70,7 @@ export const TablaMain = () => {
                 {row.idEstado}
               </TableCell>
               <TableCell component="th" scope="row">
-              <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/clientDetail">Editar cliente</Link></Button></td>
+              <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/cli/AccDetalle">Ver actividades</Link></Button></td>
               </TableCell>
 
             </TableRow>
