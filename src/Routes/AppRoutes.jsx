@@ -18,7 +18,6 @@ import { ReportesMain } from '../Administrador/ReportesMain'
 import { UsersAdmMain } from '../Administrador/UsersAdmMain'
 import { UsersAdmS } from '../Administrador/UsersAdmS'
 import { UsersDetailAdm } from '../Administrador/UsersDetailAdm'
-import { UsersDetailSaved } from '../Administrador/UsersDetailSaved'
 import { LogSesion } from '../Auth/LogSesion'
 import { HelmetHomeCli } from '../Cliente/HelmetHomeCli'
 import { AccClienteF } from '../Cliente/AccClienteF'
@@ -49,6 +48,8 @@ import { SoliClienteS } from '../Administrador/SoliClienteS'
 import { ActividadNew } from '../Profesional/ActividadNew'
 import { ClientAdmDetail } from '../Administrador/ClientAdmDetail'
 import { ReportClientesAdm } from '../Administrador/ReportClientesAdm'
+import { UsersDetailAdm2 } from '../Administrador/UsersDetailAdm2'
+import { UsersDetailAdm3 } from '../Administrador/UsersDetailAdm3'
 
 export const AppRoutes = () => {
 
@@ -112,9 +113,15 @@ export const AppRoutes = () => {
           </ProtectedRoute>
         } />
 
-        <Route path="/admin/saveDetailUser" element={
+        <Route path="/admin/detailUsers2" element={
           <ProtectedRoute user={user}>
-            <UsersDetailSaved />
+            <UsersDetailAdm2 />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/admin/detailUsers3" element={
+          <ProtectedRoute user={user}>
+            <UsersDetailAdm3 />
           </ProtectedRoute>
         } />
 

@@ -13,7 +13,7 @@ const handleChange = (value) => {
     console.log(`selected ${value}`);
 };
 
-export const UsersDetailAdm = () => {
+export const UsersDetailAdm3 = () => {
     return (
         <div className="cuerpo">
             <div className="repContenedor">
@@ -23,11 +23,11 @@ export const UsersDetailAdm = () => {
                 <table className="nuevoUser">
                     <tr>
                         <td>Nombre :</td>
-                        <td><Input placeholder="Bruce Wayne" defaultValue="Juan Esteban Gaete Stangl" className="inputDefectoA" /></td>
+                        <td><Input placeholder="Bruce Wayne" defaultValue="Johann Bernardo Gómez Norambuena" className="inputDefectoA" /></td>
                         <td>Tipo de usuario :</td>
                         <td><Select
                             className="Cliente"
-                            defaultValue={2}
+                            defaultValue={1}
                             style={{
                                 width: 150,
                                 marginLeft: 20,
@@ -43,29 +43,16 @@ export const UsersDetailAdm = () => {
                     <tr>
                         <td>Rut :</td>
                         <td><Input placeholder="12345678-9" defaultValue="12.345.678-9" className="inputDefecto" /></td>
-                        <td>Empresa :</td>
-                        <td><Select
-                            className="nivel"
-                            defaultValue={2}
-                            style={{
-                                width: 150,
-                            }}
-                            onChange={handleChange}
-                        >
-                            <Option value={1}>Emp1</Option>
-                            <Option value={2}>Emp2</Option>
-                            <Option value={3}>Emp3</Option>
-                        </Select></td>
                     </tr>
                     <br />
                     <tr>
                         <td>Nombre usuario :</td>
-                        <td><Input placeholder="BWAYNE" defaultValue="JGAETES" className="inputDefecto" /></td>
+                        <td><Input placeholder="BWAYNE" defaultValue="JGOMEZN" className="inputDefecto" /></td>
                     </tr>
                     <br />
                     <tr>
                         <td>Email :</td>
-                        <td><Input placeholder="bwayne@wayneind.com" defaultValue="jgaetes@duoc.cl" className="inputDefecto"/></td>
+                        <td><Input placeholder="bwayne@wayneind.com" defaultValue="jgomezn@helmet.cl" className="inputDefecto"/></td>
                     </tr>
                     <br />
                     <tr>

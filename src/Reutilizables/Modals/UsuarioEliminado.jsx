@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Result } from 'antd';
 import Button from 'react-bootstrap/Button';
 
-export const ClienteEliminado = ({ setStateEraseClient }) => {
+export const UsuarioEliminado = ({ setStateEliminarUser }) => {
 
-    const closeEraseClient = () => {
-        setStateEraseClient(false);
+    const closeEliminarUser = () => {
+        setStateEliminarUser(false);
     }
 
     return (
@@ -14,11 +14,11 @@ export const ClienteEliminado = ({ setStateEraseClient }) => {
             <div className="contModalCli">
                 <Result
                     status="success"
-                    title="Cliente eliminado"
+                    title="Usuario eliminado"
                 />
                 <div className='buttonsModal'>
 
-                    <Button className="animate__animated" onClick={closeEraseClient} variant="success"><Link to="/admin/listClient">Aceptar</Link></Button>
+                    <Button className="animate__animated" onClick={closeEliminarUser} variant="success"><Link to="/admin/listUsers">Aceptar</Link></Button>
 
                 </div>
             </div>

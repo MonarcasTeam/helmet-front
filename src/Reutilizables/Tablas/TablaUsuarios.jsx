@@ -92,14 +92,14 @@ export const TablaUsuarios = () => {
           <td>JGOMEZN</td>
           <td>Administrador</td>
           <td>Helmet</td>
-          <td className="detalleButton"><Button className="verDetalle" variant="success">Ver detalle</Button></td>
+          <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/detailUsers3">Ver detalle</Link></Button></td>
         </tr>
         <tr>
           <td>Guillermo carrasco Araya</td>
           <td>GCARRASCOA</td>
           <td>Profesional</td>
           <td>Helmet</td>
-          <td className="detalleButton"><Button className="verDetalle" variant="success">Ver detalle</Button></td>
+          <td className="detalleButton"><Button className="verDetalle" variant="success"><Link to="/admin/detailUsers2">Ver detalle</Link></Button></td>
         </tr>
         <tr>
           <td>Juan Gaete Stangl</td>

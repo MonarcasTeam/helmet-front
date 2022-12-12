@@ -11,13 +11,13 @@ export const SoliEnviada = ({ setStateSoliEnviada }) => {
 
     return (
         <div className="cuerpoModal animate__animated animate__fadeIn">
-            <div className="contModal">
+            <div className="contModalCli">
                 <Result
                     status="success"
                     title="Solicitud enviada con éxito"
                     subTitle="Se ha enviado la solicitud a un administrador y deberá ser aprobada para su ejecución."
                 />
-                <Button className="animate__animated" onClick={closeSoliEnviada} variant="success"><Link to="/admin/listClient">Aceptar</Link></Button>
+                <Button className="animate__animated" onClick={closeSoliEnviada} variant="success"><Link to="/cli/SolicitudClienteF">Aceptar</Link></Button>
             </div>
         </div>
     )
