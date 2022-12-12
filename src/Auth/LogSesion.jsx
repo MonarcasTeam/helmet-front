@@ -87,7 +87,7 @@ export const LogSesion = () => {
               <br />
               <a href="#" className='olvido'>Olvidé mi contraseña</a>
             </Form.Group>
-            <Button variant="success" type="submit" onClick={onClickLogin}>
+            <Button variant="success" type="submit" onClick={onClickLogin} style={{marginBottom: 20}}>
               Iniciar Sesión
             </Button>
           </Form>
