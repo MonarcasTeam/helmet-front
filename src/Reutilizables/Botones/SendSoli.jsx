@@ -25,7 +25,6 @@ export const SendSoli = () => {
               <Link to="/cli/SolicitudClienteF">Volver</Link>
             </ToggleButton>
           </ToggleButtonGroup>
-
       }
 
       {

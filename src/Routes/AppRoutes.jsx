@@ -43,7 +43,6 @@ import { ReportClientes } from '../Cliente/ReportClientes'
 import { ReporteClientesS } from '../Cliente/ReporteClientesS'
 import { SolicitudClienteF } from '../Cliente/SolicitudClienteF'
 import { SolicitudClienteS } from '../Cliente/SolicitudClienteS'
-import { SolicitudClienteT } from '../Cliente/SolicitudClienteT'
 import { SubCliente } from '../Administrador/SubCliente'
 import { SoliClientesF } from '../Administrador/SoliClientesF'
 import { SoliClienteS } from '../Administrador/SoliClienteS'
@@ -276,12 +275,6 @@ export const AppRoutes = () => {
         <Route path='/cli/NewSolicitud' element={
           <ProtectedRoute user={user}>
             <SolicitudClienteS />
-          </ProtectedRoute>
-        } />
-
-        <Route path='/cli/SoliEnviada' element={
-          <ProtectedRoute user={user}>
-            <SolicitudClienteT />
           </ProtectedRoute>
         } />
 
